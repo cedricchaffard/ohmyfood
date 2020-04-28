@@ -1,0 +1,246 @@
+/* line 1, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+body {
+  margin: 0;
+  cursor: default; }
+
+/* line 6, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+main {
+  font-family: sans-serif; }
+
+/* line 10, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+header {
+  height: 20vh;
+  width: auto;
+  background-color: #699a88;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* line 19, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+h1 {
+  color: #fac047;
+  font-size: 3.5em;
+  cursor: default; }
+
+/* line 25, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+article {
+  display: flex;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+/* line 32, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+section {
+  height: 80vh;
+  min-width: 30vw;
+  margin: 2vw;
+  background-color: #f6e0dc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: auto;
+  text-align: center; }
+
+/* line 45, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+section h2 {
+  width: 20%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition-duration: 800ms;
+  position: absolute; }
+
+/* line 55, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+section h2 i {
+  font-size: 2em;
+  margin-top: -8vh; }
+
+/* line 61, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+article a:first-child h2 {
+  background: #7f00ff;
+  background: -moz-linear-gradient(left, #7f00ff 0%, #c700ff 100%);
+  background: -webkit-linear-gradient(left, #7f00ff 0%, #c700ff 100%);
+  background: linear-gradient(to right, #7f00ff 0%, #c700ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f00ff', endColorstr='#c700ff',GradientType=1 );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; }
+
+/* line 72, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+article a:nth-child(2) h2 {
+  background: #ff9900;
+  background: -moz-linear-gradient(left, #ff9900 1%, #7d5ea3 57%);
+  background: -webkit-linear-gradient(left, #ff9900 1%, #7d5ea3 57%);
+  background: linear-gradient(to right, #ff9900 1%, #7d5ea3 57%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#7d5ea3',GradientType=1 );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; }
+
+/* line 84, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+article a:nth-child(3) h2 {
+  background: #00b7ea;
+  background: -moz-linear-gradient(left, #00b7ea 0%, #0060c1 100%);
+  background: -webkit-linear-gradient(left, #00b7ea 0%, #0060c1 100%);
+  background: linear-gradient(to right, #00b7ea 0%, #0060c1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#0060c1',GradientType=1 );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; }
+
+/* line 96, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+article a:nth-child(4) h2 {
+  background: #1eb500;
+  background: -moz-linear-gradient(left, #1eb500 0%, #74ff6b 100%);
+  background: -webkit-linear-gradient(left, #1eb500 0%, #74ff6b 100%);
+  background: linear-gradient(to right, #1eb500 0%, #74ff6b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1eb500', endColorstr='#74ff6b',GradientType=1 );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; }
+
+/* line 111, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+article a {
+  text-decoration: none; }
+
+/* line 115, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+section h2:hover {
+  transform: scale(1.3);
+  opacity: 0.6; }
+
+/* line 120, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+footer {
+  height: 10vh;
+  width: 100%;
+  background-color: #699a88;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0; }
+
+/* line 130, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+/* line 137, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+#soon {
+  height: 7vh;
+  width: 16vw;
+  background-color: #699a88;
+  margin-bottom: 15vh;
+  margin-top: 5vh;
+  border-radius: 15px;
+  color: #fac047;
+  font-size: 1.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em; }
+
+/* line 153, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+.ellipsis {
+  animation: ellipsis 1.5s infinite alternate;
+  animation-timing-function: linear; }
+
+/* line 158, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+.ellipsis:nth-child(2) {
+  animation-delay: 0.5s; }
+
+/* line 162, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+.ellipsis:nth-child(3) {
+  animation-delay: 1s; }
+
+/* line 166, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+footer a {
+  cursor: default;
+  text-decoration: none; }
+
+/* line 171, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+#legal, #contact {
+  color: #fac047;
+  margin-left: 3vw;
+  margin-right: 3vw; }
+
+/* line 177, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+#legal:hover, #contact:hover {
+  animation: wiggle 10ms;
+  animation-iteration-count: 30; }
+
+/*MENU1 PAGE*/
+/* line 184, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+#menu1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px red solid; }
+
+/* line 191, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+#menu1 article {
+  border: 1px rgba(0, 0, 0, 0.5) solid;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.25);
+  margin: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+/* DO NOT REMOVE*/
+/* line 204, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+#menu1 article section {
+  margin: 0;
+  padding: 0; }
+
+/**/
+/**/
+/* line 215, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+#menu1 h1 {
+  font-size: 1.5em;
+  color: black; }
+
+/* line 220, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+ul {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  font-weight: 900;
+  padding: 0;
+  text-align: center; }
+
+/* line 227, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+li {
+  list-style-type: none;
+  font-weight: normal;
+  text-align: left;
+  font-size: 0.9em; }
+
+/* line 235, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+div {
+  text-align: center; }
+
+/* line 239, /Users/cedricchaffard/Desktop/Developpeur_Web_Formation/OPENCLASSROOMS/projet3/ohmyfood/scss/style.scss */
+div a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  padding: 1vw; }
+
+/*KEYFRAMES*/
+@keyframes ellipsis {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: .5; }
+  100% {
+    opacity: 1; } }
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(-3deg); }
+  75% {
+    transform: rotate(3deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+/*# sourceMappingURL=style.css.map */
