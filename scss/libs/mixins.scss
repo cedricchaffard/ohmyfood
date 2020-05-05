@@ -1,0 +1,231 @@
+/*LAYOUT MIXINS*/
+
+@mixin margin{
+    margin: 0;
+    padding:0;
+}
+
+@mixin cursor{
+    cursor:default;
+}
+
+@mixin menu_cards{
+    margin:2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height:55vh;
+    width: 80vw;
+}
+
+@mixin neumorphic-shadow{
+    box-shadow:6px 6px 8px 0 rgba(0, 0, 0, 0.25),
+        -6px -6px 10px 0 rgba(255, 255, 255, 0.55);
+}
+
+/*TITLES GRADIENT COLOR*/
+/*TITLE1 GRADIANT COLOR MENU NOTE*/
+
+@mixin gradient-note{
+    background: #7f00ff;
+    background: -moz-linear-gradient(left,  #7f00ff 0%, #c700ff 100%);
+    background: -webkit-linear-gradient(left,  #7f00ff 0%,#c700ff 100%);
+    background: linear-gradient(to right,  #7f00ff 0%,#c700ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f00ff', endColorstr='#c700ff',GradientType=1 );
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+}
+
+/*TITLE1 GRADIANT COLOR MENU CHIC*/
+
+@mixin gradient-chic{
+    background: #ff9900;
+    background: -moz-linear-gradient(left,  #ff9900 1%, #7d5ea3 57%);
+    background: -webkit-linear-gradient(left,  #ff9900 1%,#7d5ea3 57%);
+    background: linear-gradient(to right,  #ff9900 1%,#7d5ea3 57%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#7d5ea3',GradientType=1 );
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+}
+
+/*TITLE1 GRADIANT COLOR MENU CHIC*/
+
+@mixin gradient-delice{
+    background: #00b7ea;
+    background: -moz-linear-gradient(left,  #00b7ea 0%, #0060c1 100%);
+    background: -webkit-linear-gradient(left,  #00b7ea 0%,#0060c1 100%);
+    background: linear-gradient(to right,  #00b7ea 0%,#0060c1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#0060c1',GradientType=1 );
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+}
+
+/*TITLE1 GRADIANT COLOR MENU TASTE*/
+
+@mixin gradient-taste{
+    background: #1eb500;
+    background: -moz-linear-gradient(left,  #1eb500 0%, #74ff6b 100%);
+    background: -webkit-linear-gradient(left,  #1eb500 0%,#74ff6b 100%);
+    background: linear-gradient(to right,  #1eb500 0%,#74ff6b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1eb500', endColorstr='#74ff6b',GradientType=1 );
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+}
+
+@mixin menu-font-delice-taste{
+    font-family: "Cervanttis";
+    font-size: 2em;
+
+}
+
+
+/*MENUS LAYOUT*/
+
+@mixin main{
+    /*MENU CARDS LAYOUT*/
+    display: flex;
+    max-width:100%;
+    padding:10vw;
+
+    justify-content: center;
+    /*MENU CARDS LAYOUT & DIMENSIONS*/
+    article {
+        @include menu_cards;
+        min-height:55vh;
+        width: 70vw;
+    }
+    /*MENU CARDS COLOR linked with LINK*/
+    a{
+        text-decoration: none;
+        @include cursor;
+        margin:2vh;
+        h3{
+            font-size: $menu-font-size;
+        }
+
+        /*MENU CARDS COLOR & H2/H3 FONT FAMILY and SIZE*/
+        /*MENU1 NOTEENCHANTÉE*/
+        &:first-child{
+            background-color:$background-color-menu1;
+            h2{
+                font-family: "Barcelony";
+                font-size:2em;
+            }
+            h3{
+                font-family:"simplifica";
+                text-transform: uppercase;
+            }
+            img{
+                height:6vh;
+            }
+        }
+
+        /*MENU NAMES ANIMATION DURATION*/
+        &h2{
+            transition-duration: 1s;
+        }
+    }
+    /*MENU NAMES & ANIMATION*/
+    h2{
+        max-width:100%;
+        margin: 0;
+        height:auto;
+        transition-duration: 800ms;
+        &:hover{
+            transform:scale(1.3);
+            opacity:0.6;
+        }
+    }
+}
+
+/*MENUS LAYOUT*/
+@mixin menu-layout{
+    @include neumorphic-shadow;
+    @include table-layout;
+    background: $neuback;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:3vh 3vw 1vh 3vw;
+    padding:0 1vh 5vh 1vh;
+    font-family: $table-font;
+    font-size:0.6em;
+    table td:first-child img{
+        width:10vh;
+        height:auto;
+    }
+    h1{
+        font-size:1.5em;
+        color: black;
+        font-family: $menu1-font;
+        margin-top:1vh;
+    }
+}
+
+/*TABLE DESIGNATIONS & PRICES LAYOUTS*/
+@mixin table-layout{
+    font-family: $table-font;
+    padding-bottom: 2vh;
+    .price{
+        text-align: right;
+    }
+    .food-part-title{
+        font-weight:bold;
+        .food-name-menu-layout{
+            padding:2vh 0 3vh 0;
+        }
+        td:first-child{
+            padding-bottom:2vh;
+            font-size: 1.5em;
+            text-align: center;
+            .left{
+                float: left;
+                padding-top:1.5vh;
+            }
+            .right{
+                float: right;
+                padding-top:1.5vh;
+            }
+            img{
+                width:10vh;
+                height:auto;
+            }
+        }
+    }
+}
+
+/*UNDERLINED TITLES ANIMATION*/
+@mixin underlined-titles{
+    display:inline-block;
+    &:hover:after{
+        width:100%;
+    }
+    &:after{
+        content:"";
+        display:block;
+        height:1px;
+        width:0%;
+        margin-bottom:0;
+        background-color:rgba(0, 0, 0, 0.6);
+        transition:width 1s;
+    }
+}
+
+/*RETURN MENU BUTTON*/
+
+@mixin back-button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor:default;
+    margin: 2vh 0 15vh 0;
+    font-size:.8em;
+    background-color: $theme-color;
+    color: $main-texts-color;
+    width:15vw;
+    font-family: $secondary-font;
+    @include neumorphic-shadow;
+}
+
