@@ -1,6 +1,7 @@
 /*SASS STYLESHEET LINKS*/
 @import "libs/mixins";
 @import "libs/variables";
+@import "libs/responsive";
 
 /*MAIN TITLTE OHMYFOOD FONT*/
 @font-face{
@@ -23,9 +24,9 @@
 }
 
 /*MENU2 DELICE FONT*/
-@font-face {
-    font-family: "novar";
-    src: url("../font/novar/novar.ttf") format("truetype");
+@font-face{
+    font-family: "Marmo-Regular";
+    src: url("../font/Marmo/Marmo-Regular.otf") format("truetype");
 }
 
 /*MENU3 DELICE FONT*/
@@ -56,9 +57,10 @@
 }
 
 /*MENU COOKED FOOD FONT*/
+
 @font-face{
-    font-family: "Lament";
-    src: url("../font/Lament/Lament.otf") format("truetype");
+    font-family: "Berrylicious";
+    src: url("../font/Berrylicious/Berrylicious-Regular.otf") format("truetype");
 }
 
 /**//*RESPONSIVE VERSION*//**/
@@ -94,10 +96,10 @@
     #accueil {
         /*MENU CARDS LAYOUT*/
         max-width:100%;
-        align-items: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         /*MENU CARDS LAYOUT & DIMENSIONS*/
         article {
             @include menu_cards;
@@ -130,7 +132,13 @@
             /*MENU2 CHIC*/
             &:nth-child(2){
                 background-color:$background-color-menu2;
-                font-family:"novar";
+                font-family: $menu2-font;
+                h2{
+                    font-size: 1.3em;
+                }
+                h3{
+                    font-size: 1.1em;
+                }
             }
             /*MENU3 DELICE*/
             &:nth-child(3){
@@ -173,7 +181,7 @@
         }
     }
 
-    /*TITLES GRADIENT COLOR MENUS*/
+    /*TITLES GRADIENT COLOR MENUS ACCUEIL*/
 
     #note h2,#note h3{
         @include gradient-note;
@@ -199,6 +207,7 @@
         max-height:5vh;
         width: 75vw;
         background-color: $theme-color;
+        margin-top: 1vh;
         margin-bottom:10vh;
         border-radius:15px;
         color:$main-texts-color;
@@ -269,19 +278,38 @@
         @include menu-layout;
         background-color:$background-color-menu2;
         font-family: $menu2-font;
+        span{
+            @include gradient-chic;
+        }
         h1{
             font-family: $menu2-font;
+            @include gradient-chic;
+            font-size: 2em;
+        }
+        table td{
+            @include gradient-chic;
+            font-size: .6em;
+        }
+        .food-part-title{
+            font-size: .8em;
         }
     }
 
     #menu3 {
         @include menu-layout;
         background-color:$background-color-menu3;
+        h1{
+            font-family: $menu3-font;
+        }
     }
 
     #menu4 {
         @include menu-layout;
         background-color:$background-color-menu4;
+        h1{
+            font-family: $menu4-font;
+        }
+
     }
 
     /*UNDERLINED TITLES ANIMATION*/
@@ -306,6 +334,21 @@
             margin-bottom: 10vh;
         }
     }
+
+    /*TERMS OF USE PAGE*/
+    #terms-of-use{
+        @include terms-of-use;
+    }
+
+    #terms-legal{
+            display: none;
+    }
+
+    #terms-of-use-footer{
+        justify-content: center;
+    }
+
+
 
     /*KEYFRAMES*/
 

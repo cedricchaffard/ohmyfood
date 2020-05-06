@@ -11,6 +11,7 @@
 /*TABLE DESIGNATIONS & PRICES LAYOUTS*/
 /*UNDERLINED TITLES ANIMATION*/
 /*RETURN MENU BUTTON*/
+/*TERMS OF USE*/
 /*SCSS VARIABLES CREATION*/
 /*GREEN*/
 /*YELLOW*/
@@ -27,6 +28,7 @@
 /*MENU3 FONT*/
 /*MENU4 FONT*/
 /*MENU TABLES*/
+/*UNDERLINED TITLES ANIMATION DURATION VARIABLE*/
 /*MAIN TITLTE OHMYFOOD FONT*/
 @font-face {
   font-family: "anonymous";
@@ -44,8 +46,8 @@
 }
 /*MENU2 DELICE FONT*/
 @font-face {
-  font-family: "novar";
-  src: url("../font/novar/novar.ttf") format("truetype");
+  font-family: "Marmo-Regular";
+  src: url("../font/Marmo/Marmo-Regular.otf") format("truetype");
 }
 /*MENU3 DELICE FONT*/
 @font-face {
@@ -69,8 +71,8 @@
 }
 /*MENU COOKED FOOD FONT*/
 @font-face {
-  font-family: "Lament";
-  src: url("../font/Lament/Lament.otf") format("truetype");
+  font-family: "Berrylicious";
+  src: url("../font/Berrylicious/Berrylicious-Regular.otf") format("truetype");
 }
 /**/
 /*RESPONSIVE VERSION*/
@@ -103,10 +105,10 @@
   #accueil {
     /*MENU CARDS LAYOUT*/
     max-width: 100%;
-    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     /*MENU CARDS LAYOUT & DIMENSIONS*/
     /*MENU CARDS COLOR linked with LINK*/
     /*MENU NAMES & ANIMATION*/
@@ -151,7 +153,13 @@
   }
   #accueil a:nth-child(2) {
     background-color: #fff3fe;
-    font-family: "novar";
+    font-family: "Marmo-Regular";
+  }
+  #accueil a:nth-child(2) h2 {
+    font-size: 1.3em;
+  }
+  #accueil a:nth-child(2) h3 {
+    font-size: 1.1em;
   }
   #accueil a:nth-child(3) {
     background-color: #f8f8f8;
@@ -189,7 +197,7 @@
     opacity: 0.6;
   }
 
-  /*TITLES GRADIENT COLOR MENUS*/
+  /*TITLES GRADIENT COLOR MENUS ACCUEIL*/
   #note h2, #note h3 {
     background: #7f00ff;
     background: -moz-linear-gradient(left, #7f00ff 0%, #c700ff 100%);
@@ -235,6 +243,7 @@
     max-height: 5vh;
     width: 75vw;
     background-color: #699a88;
+    margin-top: 1vh;
     margin-bottom: 10vh;
     border-radius: 15px;
     color: #fac047;
@@ -291,16 +300,17 @@
   /*MENUS COOKING FOOD + PRICES LAYOUT*/
   #menu1 {
     box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25), -6px -6px 10px 0 rgba(255, 255, 255, 0.55);
-    font-family: "Lament";
+    font-family: "Berrylicious";
+    font-style: italic;
     padding-bottom: 2vh;
     background: #ebebeb;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3vh 3vw 1vh 3vw;
+    margin: 3vh 6vw 1vh 6vw;
     padding: 0 1vh 5vh 1vh;
-    font-family: "Lament";
+    font-family: "Berrylicious";
     font-size: 0.6em;
     background-color: #fbdad6;
   }
@@ -315,16 +325,16 @@
   }
   #menu1 .food-part-title td:first-child {
     padding-bottom: 2vh;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: center;
   }
   #menu1 .food-part-title td:first-child .left {
     float: left;
-    padding-top: 1.5vh;
+    padding-top: 1vh;
   }
   #menu1 .food-part-title td:first-child .right {
     float: right;
-    padding-top: 1.5vh;
+    padding-top: 1vh;
   }
   #menu1 .food-part-title td:first-child img {
     width: 10vh;
@@ -335,10 +345,11 @@
     height: auto;
   }
   #menu1 h1 {
-    font-size: 1.5em;
+    font-size: 2.5em;
     color: black;
     font-family: "Barcelony";
     margin-top: 1vh;
+    text-align: center;
   }
   #menu1 #note {
     padding-top: 3vh;
@@ -347,19 +358,20 @@
 
   #menu2 {
     box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25), -6px -6px 10px 0 rgba(255, 255, 255, 0.55);
-    font-family: "Lament";
+    font-family: "Berrylicious";
+    font-style: italic;
     padding-bottom: 2vh;
     background: #ebebeb;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3vh 3vw 1vh 3vw;
+    margin: 3vh 6vw 1vh 6vw;
     padding: 0 1vh 5vh 1vh;
-    font-family: "Lament";
+    font-family: "Berrylicious";
     font-size: 0.6em;
     background-color: #fff3fe;
-    font-family: "novar";
+    font-family: "Marmo-Regular";
   }
   #menu2 .price {
     text-align: right;
@@ -372,16 +384,16 @@
   }
   #menu2 .food-part-title td:first-child {
     padding-bottom: 2vh;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: center;
   }
   #menu2 .food-part-title td:first-child .left {
     float: left;
-    padding-top: 1.5vh;
+    padding-top: 1vh;
   }
   #menu2 .food-part-title td:first-child .right {
     float: right;
-    padding-top: 1.5vh;
+    padding-top: 1vh;
   }
   #menu2 .food-part-title td:first-child img {
     width: 10vh;
@@ -392,27 +404,59 @@
     height: auto;
   }
   #menu2 h1 {
-    font-size: 1.5em;
+    font-size: 2.5em;
     color: black;
     font-family: "Barcelony";
     margin-top: 1vh;
+    text-align: center;
+  }
+  #menu2 span {
+    background: #ff9900;
+    background: -moz-linear-gradient(left, #ff9900 1%, #7d5ea3 57%);
+    background: -webkit-linear-gradient(left, #ff9900 1%, #7d5ea3 57%);
+    background: linear-gradient(to right, #ff9900 1%, #7d5ea3 57%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ff9900", endColorstr="#7d5ea3",GradientType=1 );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
   }
   #menu2 h1 {
-    font-family: "novar";
+    font-family: "Marmo-Regular";
+    background: #ff9900;
+    background: -moz-linear-gradient(left, #ff9900 1%, #7d5ea3 57%);
+    background: -webkit-linear-gradient(left, #ff9900 1%, #7d5ea3 57%);
+    background: linear-gradient(to right, #ff9900 1%, #7d5ea3 57%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ff9900", endColorstr="#7d5ea3",GradientType=1 );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 2em;
+  }
+  #menu2 table td {
+    background: #ff9900;
+    background: -moz-linear-gradient(left, #ff9900 1%, #7d5ea3 57%);
+    background: -webkit-linear-gradient(left, #ff9900 1%, #7d5ea3 57%);
+    background: linear-gradient(to right, #ff9900 1%, #7d5ea3 57%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ff9900", endColorstr="#7d5ea3",GradientType=1 );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 0.6em;
+  }
+  #menu2 .food-part-title {
+    font-size: 0.8em;
   }
 
   #menu3 {
     box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25), -6px -6px 10px 0 rgba(255, 255, 255, 0.55);
-    font-family: "Lament";
+    font-family: "Berrylicious";
+    font-style: italic;
     padding-bottom: 2vh;
     background: #ebebeb;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3vh 3vw 1vh 3vw;
+    margin: 3vh 6vw 1vh 6vw;
     padding: 0 1vh 5vh 1vh;
-    font-family: "Lament";
+    font-family: "Berrylicious";
     font-size: 0.6em;
     background-color: #f8f8f8;
   }
@@ -427,16 +471,16 @@
   }
   #menu3 .food-part-title td:first-child {
     padding-bottom: 2vh;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: center;
   }
   #menu3 .food-part-title td:first-child .left {
     float: left;
-    padding-top: 1.5vh;
+    padding-top: 1vh;
   }
   #menu3 .food-part-title td:first-child .right {
     float: right;
-    padding-top: 1.5vh;
+    padding-top: 1vh;
   }
   #menu3 .food-part-title td:first-child img {
     width: 10vh;
@@ -447,24 +491,29 @@
     height: auto;
   }
   #menu3 h1 {
-    font-size: 1.5em;
+    font-size: 2.5em;
     color: black;
     font-family: "Barcelony";
     margin-top: 1vh;
+    text-align: center;
+  }
+  #menu3 h1 {
+    font-family: "Dancing_Script";
   }
 
   #menu4 {
     box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25), -6px -6px 10px 0 rgba(255, 255, 255, 0.55);
-    font-family: "Lament";
+    font-family: "Berrylicious";
+    font-style: italic;
     padding-bottom: 2vh;
     background: #ebebeb;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3vh 3vw 1vh 3vw;
+    margin: 3vh 6vw 1vh 6vw;
     padding: 0 1vh 5vh 1vh;
-    font-family: "Lament";
+    font-family: "Berrylicious";
     font-size: 0.6em;
     background-color: #fafafa;
   }
@@ -479,16 +528,16 @@
   }
   #menu4 .food-part-title td:first-child {
     padding-bottom: 2vh;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: center;
   }
   #menu4 .food-part-title td:first-child .left {
     float: left;
-    padding-top: 1.5vh;
+    padding-top: 1vh;
   }
   #menu4 .food-part-title td:first-child .right {
     float: right;
-    padding-top: 1.5vh;
+    padding-top: 1vh;
   }
   #menu4 .food-part-title td:first-child img {
     width: 10vh;
@@ -499,10 +548,14 @@
     height: auto;
   }
   #menu4 h1 {
-    font-size: 1.5em;
+    font-size: 2.5em;
     color: black;
     font-family: "Barcelony";
     margin-top: 1vh;
+    text-align: center;
+  }
+  #menu4 h1 {
+    font-family: "Holiday+Romance";
   }
 
   /*UNDERLINED TITLES ANIMATION*/
@@ -519,7 +572,8 @@
     width: 0%;
     margin-bottom: 0;
     background-color: rgba(0, 0, 0, 0.6);
-    transition: width 1s;
+    transition: width;
+    transition-duration: 1s;
   }
 
   /*BACK BUTTON*/
@@ -547,6 +601,63 @@
     border-radius: 10px;
     text-decoration: none;
     margin-bottom: 10vh;
+  }
+
+  /*TERMS OF USE PAGE*/
+  #terms-of-use {
+    font-family: "Basier_Mono_Square_Regular";
+  }
+  #terms-of-use h2 {
+    background: #699a88;
+    width: 100%;
+    text-align: center;
+    color: #fac047;
+    box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25), -6px -6px 10px 0 rgba(255, 255, 255, 0.55);
+    font-size: 1em;
+  }
+  #terms-of-use h3 {
+    font-size: 0.8em;
+    margin: 0 10vw 0 10vw;
+  }
+  #terms-of-use p {
+    margin: 0 10vw 0 10vw;
+    font-size: 0.7em;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.25);
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.25);
+    margin-bottom: 2vh;
+  }
+  #terms-of-use a {
+    text-decoration: none;
+    cursor: default;
+    color: #000000;
+    display: inline-block;
+  }
+  #terms-of-use a:hover:after {
+    width: 100%;
+  }
+  #terms-of-use a:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0%;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: width;
+    transition-duration: 1s;
+  }
+  #terms-of-use a:after {
+    transition-duration: 5s;
+  }
+  #terms-of-use a:hover:after {
+    transition: none;
+  }
+
+  #terms-legal {
+    display: none;
+  }
+
+  #terms-of-use-footer {
+    justify-content: center;
   }
 
   /*KEYFRAMES*/

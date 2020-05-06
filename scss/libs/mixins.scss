@@ -148,7 +148,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:3vh 3vw 1vh 3vw;
+    margin:3vh 6vw 1vh 6vw;
     padding:0 1vh 5vh 1vh;
     font-family: $table-font;
     font-size:0.6em;
@@ -157,16 +157,18 @@
         height:auto;
     }
     h1{
-        font-size:1.5em;
+        font-size:2.5em;
         color: black;
         font-family: $menu1-font;
         margin-top:1vh;
+        text-align: center;
     }
 }
 
 /*TABLE DESIGNATIONS & PRICES LAYOUTS*/
 @mixin table-layout{
     font-family: $table-font;
+    font-style: italic;
     padding-bottom: 2vh;
     .price{
         text-align: right;
@@ -178,15 +180,15 @@
         }
         td:first-child{
             padding-bottom:2vh;
-            font-size: 1.5em;
+            font-size: 1.2em;
             text-align: center;
             .left{
                 float: left;
-                padding-top:1.5vh;
+                padding-top:1vh;
             }
             .right{
                 float: right;
-                padding-top:1.5vh;
+                padding-top:1vh;
             }
             img{
                 width:10vh;
@@ -209,7 +211,8 @@
         width:0%;
         margin-bottom:0;
         background-color:rgba(0, 0, 0, 0.6);
-        transition:width 1s;
+        transition:width;
+        transition-duration: $underlined-titles-duration;
     }
 }
 
@@ -227,5 +230,41 @@
     width:15vw;
     font-family: $secondary-font;
     @include neumorphic-shadow;
+}
+
+/*TERMS OF USE*/
+@mixin terms-of-use{
+    font-family: $secondary-font;
+    h2{
+        background: $theme-color;
+        width: 100%;
+        text-align: center;
+        color: $main-texts-color;
+        @include neumorphic-shadow;
+        font-size: 1em;
+    }
+    h3{
+        font-size:.8em;
+        margin:0 10vw 0 10vw;
+    }
+    p{
+        margin:0 10vw 0 10vw;
+        font-size: .7em;
+        border-top: .5px solid rgba(0, 0, 0, 0.25);
+        border-bottom: .5px solid rgba(0, 0, 0, 0.25);
+        margin-bottom: 2vh;
+    }
+    a{
+        text-decoration:none;
+        @include cursor;
+        color: #000000;
+        @include underlined-titles;
+        &:after{
+            transition-duration: 5s;
+        }
+        &:hover:after{
+            transition: none;
+        }
+    }
 }
 
