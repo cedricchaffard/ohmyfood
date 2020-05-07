@@ -9,14 +9,11 @@
     cursor:default;
 }
 
-@mixin menu_cards{
-    margin:2vw;
+@mixin display-wrap{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    min-height:55vh;
-    width: 80vw;
 }
 
 @mixin neumorphic-shadow{
@@ -78,7 +75,6 @@
     font-size: 2em;
 
 }
-
 
 /*MENUS LAYOUT*/
 
@@ -268,3 +264,150 @@
     }
 }
 
+/**//*RESPONSIVE MIXINS*//**/
+
+@mixin h1-responsive-font-size{
+    @media screen and (max-width: $breakpoint-tablet){
+        font-size:2.5em;
+    }
+    @media screen and (min-width: $breakpoint-tablet){
+        font-size:3em;
+    }
+    @media screen and (min-width: $breakpoint-large){
+        font-size:4em;
+    }
+    @media screen and (min-width: $breakpoint-xlarge){
+        font-size:7em;
+    }
+}
+
+/*RESPONSIVE MENUS ACCUEIL*/
+@mixin responsive-accueil{
+    @media screen and (max-width: $breakpoint-tablet){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    @media screen and (min-width: $breakpoint-tablet){
+        @include display-wrap;
+    }
+    @media screen and (min-width: $breakpoint-large){
+        @include display-wrap;
+    }
+    @media screen and (min-width: $breakpoint-xlarge){
+        @include display-wrap;
+    }
+}
+
+/*RESPONSIVE MENUS SIZE*/
+@mixin menu_cards{
+    margin:2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: $breakpoint-tablet){
+        min-height:60vh;
+        width: 80vw;
+    }
+    @media screen and (min-width: $breakpoint-tablet){
+        min-height:65vh;
+        width: 40vw;
+    }
+    @media screen and (min-width: $breakpoint-large){
+        min-height:80vh;
+        width: 40vw;
+    }
+    @media screen and (min-width: $breakpoint-xlarge){
+        min-height:80vh;
+        width: 35vw;
+    }
+}
+
+@mixin menu-font-size{
+    @media screen and (min-width: $breakpoint-tablet){
+        font-size: 2em;
+    }
+    @media screen and (min-width: $breakpoint-large){
+        font-size: 3em;
+    }
+    @media screen and (min-width: $breakpoint-xlarge){
+        font-size: 4em;
+    }
+}
+
+/*SOON BUTTON*/
+@mixin soon-button-size{
+    @media screen and (max-width: $breakpoint-tablet){
+        max-height:5vh;
+        width: 75vw;
+        font-size:1.2em;
+        margin-bottom:10vh;
+        margin-top: 1vh;
+    }
+    @media screen and (min-width: $breakpoint-tablet){
+        max-height:5vh;
+        width: 50vw;
+        font-size:1.3em;
+        margin-bottom:10vh;
+        margin-top: 1vh;
+    }
+    @media screen and (min-width: $breakpoint-large){
+        max-height:5vh;
+        width: 40vw;
+        font-size:1.5em;
+        margin-bottom: 15vh;
+        margin-top: 2vh;
+    }
+    @media screen and (min-width: $breakpoint-xlarge){
+        max-height:5vh;
+        width: 35vw;
+        font-size:2em;
+        margin-bottom:20vh;
+        margin-top: 2vh;
+    }
+}
+
+/*FOOTER*/
+
+@mixin footer-size{
+    @media screen and (max-width: $breakpoint-tablet){
+        min-height:7%;
+        a{
+
+        }
+
+    }
+    @media screen and (min-width: $breakpoint-tablet){
+        min-height:8%;
+
+    }
+    @media screen and (min-width: $breakpoint-large){
+        min-height:10%;
+
+    }
+    @media screen and (min-width: $breakpoint-xlarge){
+        min-height:15%;
+
+    }
+
+}
+
+@mixin footer-link-size{
+    @media screen and (max-width: $breakpoint-tablet){
+        font-size:0.8em;
+    }
+    @media screen and (min-width: $breakpoint-tablet){
+        font-size:1em;
+
+    }
+    @media screen and (min-width: $breakpoint-large){
+        font-size:1.3em;
+
+    }
+    @media screen and (min-width: $breakpoint-xlarge){
+        font-size:1.8em;
+
+    }
+}

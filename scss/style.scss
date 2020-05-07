@@ -134,7 +134,7 @@
                 background-color:$background-color-menu2;
                 font-family: $menu2-font;
                 h2{
-                    font-size: 1.3em;
+                    font-size: 1.2em;
                 }
                 h3{
                     font-size: 1.1em;
@@ -267,7 +267,7 @@
 
     #menu1 {
         @include menu-layout;
-        #note{
+        .note{
             padding-top: 3vh;
             height:6vh;
         }
@@ -278,6 +278,7 @@
         @include menu-layout;
         background-color:$background-color-menu2;
         font-family: $menu2-font;
+        height:65vh;
         span{
             @include gradient-chic;
         }
@@ -297,6 +298,7 @@
 
     #menu3 {
         @include menu-layout;
+        height:65vh;
         background-color:$background-color-menu3;
         h1{
             font-family: $menu3-font;
@@ -341,14 +343,12 @@
     }
 
     #terms-legal{
-            display: none;
+        display: none;
     }
 
     #terms-of-use-footer{
         justify-content: center;
     }
-
-
 
     /*KEYFRAMES*/
 
@@ -377,4 +377,196 @@
         }
     }
 }
+
+/**//*RESPONSIVE TABLET DEVICES BREACKPOINT*//**/
+
+body {
+    margin:0;
+    cursor:default;
+    background: $neuback;
+}
+
+/*HEADER THEME-COLOR: $theme-color / TEXT: $main-texts-color*/
+header {
+    background-color: $theme-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & h1 {
+        color:$main-texts-color;
+        @include h1-responsive-font-size;
+        cursor:default;
+        font-family: "anonymous";
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+
+/*MAIN --> MENU CARDS*/
+
+#accueil {
+    /*MENU CARDS LAYOUT*/
+    max-width:100%;
+    @include responsive-accueil;
+    /*MENU CARDS LAYOUT & DIMENSIONS*/
+    article {
+        @include menu_cards;
+    }
+    /*MENU CARDS COLOR linked with LINK*/
+    a{
+        text-decoration: none;
+        @include cursor;
+        @include neumorphic-shadow;
+        margin:2vh;
+        h3{
+            @include menu-font-size;
+        }
+        /*MENU CARDS COLOR & H2/H3 FONT FAMILY and SIZE*/
+        /*MENU1 NOTEENCHANTÉE*/
+        &:first-child{
+            background-color:$background-color-menu1;
+            h2{
+                font-family: "Barcelony";
+                font-size:2em;
+            }
+            h3{
+                font-family:"simplifica";
+                text-transform: uppercase;
+            }
+            img{
+                height:6vh;
+            }
+        }
+        /*MENU2 CHIC*/
+        &:nth-child(2){
+            background-color:$background-color-menu2;
+            font-family: $menu2-font;
+            h2{
+                font-size: 1.2em;
+            }
+            h3{
+                font-size: 1.1em;
+            }
+        }
+        /*MENU3 DELICE*/
+        &:nth-child(3){
+            background-color:$background-color-menu3;
+            h2{
+                font-family: "Dancing_Script";
+                font-size:2em;
+            }
+            h3{
+                @include menu-font-delice-taste;
+            }
+        }
+        /*MENU4 TASTE*/
+        &:nth-child(4){
+            background-color:$background-color-menu4;
+            h2{
+                font-family: "Holiday+Romance";
+                font-size:2em;
+            }
+
+            h3{
+                @include menu-font-delice-taste;
+            }
+        }
+        /*MENU NAMES ANIMATION DURATION*/
+        &h2{
+            transition-duration: 1s;
+        }
+    }
+    /*MENU NAMES & ANIMATION*/
+    h2{
+        max-width:100%;
+        margin: 0;
+        height:auto;
+        transition-duration: 800ms;
+        &:hover{
+            transform:scale(1.3);
+            opacity:0.6;
+        }
+    }
+}
+
+/*TITLES GRADIENT COLOR MENUS ACCUEIL*/
+
+#note h2,#note h3{
+    @include gradient-note;
+}
+
+#chic h2,#chic h3{
+    @include gradient-chic;
+}
+
+#delice h2,#delice h3{
+    @include gradient-delice;
+
+}
+
+#taste h2,#taste h3{
+    @include gradient-taste;
+
+}
+
+/*SOON BUTTON*/
+
+#soon{
+    @include soon-button-size;
+    @include neumorphic-shadow;
+    background-color: $theme-color;
+
+
+    border-radius:15px;
+    color:$main-texts-color;
+    font-family: $secondary-font;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:1.5vw;
+}
+
+/*SOON BUTTON ELLIPSIS ANIMATION*/
+
+.ellipsis{
+    animation: ellipsis 1.2s infinite alternate;
+    animation-timing-function: linear;
+    &:nth-child(2) {
+        animation-delay: 0.5s;
+    }
+    &:nth-child(3) {
+        animation-delay: 1s;
+    }
+}
+
+/*FOOTER LINKS LEGAL MENTION & CONTACT + LEGAL & CONTACT ANIMATION*/
+
+footer {
+    @include footer-size;
+            width: 100%;
+    background-color: $theme-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    bottom: 0;
+    a{
+        @include footer-link-size;
+        cursor:default;
+        text-decoration: none;
+        font-family: $secondary-font;
+        color:$main-texts-color;
+        margin-left:3vw;
+        margin-right:3vw;
+        &:hover{
+            animation:wiggle 10ms;
+            animation-iteration-count: 30;
+        }
+    }
+}
+
+
+
 

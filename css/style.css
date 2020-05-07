@@ -12,6 +12,13 @@
 /*UNDERLINED TITLES ANIMATION*/
 /*RETURN MENU BUTTON*/
 /*TERMS OF USE*/
+/**/
+/*RESPONSIVE MIXINS*/
+/**/
+/*RESPONSIVE MENUS ACCUEIL*/
+/*RESPONSIVE MENUS SIZE*/
+/*SOON BUTTON*/
+/*FOOTER*/
 /*SCSS VARIABLES CREATION*/
 /*GREEN*/
 /*YELLOW*/
@@ -29,6 +36,10 @@
 /*MENU4 FONT*/
 /*MENU TABLES*/
 /*UNDERLINED TITLES ANIMATION DURATION VARIABLE*/
+/*SMALL SCREENS RESPONSIVE VARIABLE*/
+/*MEDIUM SCREENS RESPONSIVE VARIABLE*/
+/*LARGE SCREENS RESPONSIVE VARIABLE*/
+/*EXTRA-LARGE SCREENS RESPONSIVE VARIABLE*/
 /*MAIN TITLTE OHMYFOOD FONT*/
 @font-face {
   font-family: "anonymous";
@@ -119,9 +130,55 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 55vh;
+  }
+
+  /*TITLES GRADIENT COLOR MENUS ACCUEIL*/
+
+  /*SOON BUTTON*/
+
+  /*SOON BUTTON ELLIPSIS ANIMATION*/
+
+  /*FOOTER LINKS LEGAL MENTION & CONTACT + LEGAL & CONTACT ANIMATION*/
+
+  /*MENU PAGES*/
+  /**/
+  /*MENUS LAYOUT*/
+  /**/
+  /*MENUS COOKING FOOD + PRICES LAYOUT*/
+
+  /*UNDERLINED TITLES ANIMATION*/
+
+  /*BACK BUTTON*/
+
+  /*TERMS OF USE PAGE*/
+
+  /*KEYFRAMES*/
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  #accueil article {
+    min-height: 60vh;
     width: 80vw;
   }
+}
+@media screen and (max-width: 767px) and (min-width: 767px) {
+  #accueil article {
+    min-height: 65vh;
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 1023px) {
+  #accueil article {
+    min-height: 80vh;
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 1199px) {
+  #accueil article {
+    min-height: 80vh;
+    width: 35vw;
+  }
+}
+@media (max-width: 767px) {
   #accueil a {
     text-decoration: none;
     cursor: default;
@@ -156,7 +213,7 @@
     font-family: "Marmo-Regular";
   }
   #accueil a:nth-child(2) h2 {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
   #accueil a:nth-child(2) h3 {
     font-size: 1.1em;
@@ -186,6 +243,8 @@
   #accueil ah2 {
     transition-duration: 1s;
   }
+}
+@media (max-width: 767px) {
   #accueil h2 {
     max-width: 100%;
     margin: 0;
@@ -196,8 +255,8 @@
     transform: scale(1.3);
     opacity: 0.6;
   }
-
-  /*TITLES GRADIENT COLOR MENUS ACCUEIL*/
+}
+@media (max-width: 767px) {
   #note h2, #note h3 {
     background: #7f00ff;
     background: -moz-linear-gradient(left, #7f00ff 0%, #c700ff 100%);
@@ -207,7 +266,8 @@
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
-
+}
+@media (max-width: 767px) {
   #chic h2, #chic h3 {
     background: #ff9900;
     background: -moz-linear-gradient(left, #ff9900 1%, #7d5ea3 57%);
@@ -217,7 +277,8 @@
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
-
+}
+@media (max-width: 767px) {
   #delice h2, #delice h3 {
     background: #00b7ea;
     background: -moz-linear-gradient(left, #00b7ea 0%, #0060c1 100%);
@@ -227,7 +288,8 @@
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
-
+}
+@media (max-width: 767px) {
   #taste h2, #taste h3 {
     background: #1eb500;
     background: -moz-linear-gradient(left, #1eb500 0%, #74ff6b 100%);
@@ -237,8 +299,8 @@
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
-
-  /*SOON BUTTON*/
+}
+@media (max-width: 767px) {
   #soon {
     max-height: 5vh;
     width: 75vw;
@@ -255,8 +317,8 @@
     padding: 1.5vw;
     box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25), -6px -6px 10px 0 rgba(255, 255, 255, 0.55);
   }
-
-  /*SOON BUTTON ELLIPSIS ANIMATION*/
+}
+@media (max-width: 767px) {
   .ellipsis {
     animation: ellipsis 1.2s infinite alternate;
     animation-timing-function: linear;
@@ -267,8 +329,8 @@
   .ellipsis:nth-child(3) {
     animation-delay: 1s;
   }
-
-  /*FOOTER LINKS LEGAL MENTION & CONTACT + LEGAL & CONTACT ANIMATION*/
+}
+@media (max-width: 767px) {
   footer {
     min-height: 7%;
     width: 100%;
@@ -292,12 +354,8 @@
     animation: wiggle 10ms;
     animation-iteration-count: 30;
   }
-
-  /*MENU PAGES*/
-  /**/
-  /*MENUS LAYOUT*/
-  /**/
-  /*MENUS COOKING FOOD + PRICES LAYOUT*/
+}
+@media (max-width: 767px) {
   #menu1 {
     box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25), -6px -6px 10px 0 rgba(255, 255, 255, 0.55);
     font-family: "Berrylicious";
@@ -351,11 +409,12 @@
     margin-top: 1vh;
     text-align: center;
   }
-  #menu1 #note {
+  #menu1 .note {
     padding-top: 3vh;
     height: 6vh;
   }
-
+}
+@media (max-width: 767px) {
   #menu2 {
     box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25), -6px -6px 10px 0 rgba(255, 255, 255, 0.55);
     font-family: "Berrylicious";
@@ -372,6 +431,7 @@
     font-size: 0.6em;
     background-color: #fff3fe;
     font-family: "Marmo-Regular";
+    height: 65vh;
   }
   #menu2 .price {
     text-align: right;
@@ -443,7 +503,8 @@
   #menu2 .food-part-title {
     font-size: 0.8em;
   }
-
+}
+@media (max-width: 767px) {
   #menu3 {
     box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25), -6px -6px 10px 0 rgba(255, 255, 255, 0.55);
     font-family: "Berrylicious";
@@ -458,6 +519,7 @@
     padding: 0 1vh 5vh 1vh;
     font-family: "Berrylicious";
     font-size: 0.6em;
+    height: 65vh;
     background-color: #f8f8f8;
   }
   #menu3 .price {
@@ -500,7 +562,8 @@
   #menu3 h1 {
     font-family: "Dancing_Script";
   }
-
+}
+@media (max-width: 767px) {
   #menu4 {
     box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25), -6px -6px 10px 0 rgba(255, 255, 255, 0.55);
     font-family: "Berrylicious";
@@ -557,8 +620,8 @@
   #menu4 h1 {
     font-family: "Holiday+Romance";
   }
-
-  /*UNDERLINED TITLES ANIMATION*/
+}
+@media (max-width: 767px) {
   span {
     display: inline-block;
   }
@@ -575,8 +638,8 @@
     transition: width;
     transition-duration: 1s;
   }
-
-  /*BACK BUTTON*/
+}
+@media (max-width: 767px) {
   div {
     height: auto;
     width: 100%;
@@ -602,8 +665,8 @@
     text-decoration: none;
     margin-bottom: 10vh;
   }
-
-  /*TERMS OF USE PAGE*/
+}
+@media (max-width: 767px) {
   #terms-of-use {
     font-family: "Basier_Mono_Square_Regular";
   }
@@ -651,16 +714,18 @@
   #terms-of-use a:hover:after {
     transition: none;
   }
-
+}
+@media (max-width: 767px) {
   #terms-legal {
     display: none;
   }
-
+}
+@media (max-width: 767px) {
   #terms-of-use-footer {
     justify-content: center;
   }
-
-  /*KEYFRAMES*/
+}
+@media (max-width: 767px) {
   @keyframes ellipsis {
     0% {
       opacity: 0;
@@ -669,6 +734,8 @@
       opacity: 1;
     }
   }
+}
+@media (max-width: 767px) {
   @keyframes wiggle {
     0% {
       transform: rotate(0deg);
@@ -683,6 +750,373 @@
       transform: rotate(0deg);
     }
   }
+}
+/**/
+/*RESPONSIVE TABLET DEVICES BREACKPOINT*/
+/**/
+body {
+  margin: 0;
+  cursor: default;
+  background: #ebebeb;
+}
+
+/*HEADER THEME-COLOR: $theme-color / TEXT: $main-texts-color*/
+header {
+  background-color: #699a88;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  color: #fac047;
+  cursor: default;
+  font-family: "anonymous";
+}
+@media screen and (max-width: 767px) {
+  header h1 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 767px) {
+  header h1 {
+    font-size: 3em;
+  }
+}
+@media screen and (min-width: 1023px) {
+  header h1 {
+    font-size: 4em;
+  }
+}
+@media screen and (min-width: 1199px) {
+  header h1 {
+    font-size: 7em;
+  }
+}
+header a {
+  text-decoration: none;
+}
+
+/*MAIN --> MENU CARDS*/
+#accueil {
+  /*MENU CARDS LAYOUT*/
+  max-width: 100%;
+  /*MENU CARDS LAYOUT & DIMENSIONS*/
+  /*MENU CARDS COLOR linked with LINK*/
+  /*MENU NAMES & ANIMATION*/
+}
+@media screen and (max-width: 767px) {
+  #accueil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 767px) {
+  #accueil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1023px) {
+  #accueil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1199px) {
+  #accueil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#accueil article {
+  margin: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  #accueil article {
+    min-height: 60vh;
+    width: 80vw;
+  }
+}
+@media screen and (min-width: 767px) {
+  #accueil article {
+    min-height: 65vh;
+    width: 40vw;
+  }
+}
+@media screen and (min-width: 1023px) {
+  #accueil article {
+    min-height: 80vh;
+    width: 40vw;
+  }
+}
+@media screen and (min-width: 1199px) {
+  #accueil article {
+    min-height: 80vh;
+    width: 35vw;
+  }
+}
+#accueil a {
+  text-decoration: none;
+  cursor: default;
+  box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25), -6px -6px 10px 0 rgba(255, 255, 255, 0.55);
+  margin: 2vh;
+  /*MENU CARDS COLOR & H2/H3 FONT FAMILY and SIZE*/
+  /*MENU1 NOTEENCHANTÉE*/
+  /*MENU2 CHIC*/
+  /*MENU3 DELICE*/
+  /*MENU4 TASTE*/
+  /*MENU NAMES ANIMATION DURATION*/
+}
+@media screen and (min-width: 767px) {
+  #accueil a h3 {
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 1023px) {
+  #accueil a h3 {
+    font-size: 3em;
+  }
+}
+@media screen and (min-width: 1199px) {
+  #accueil a h3 {
+    font-size: 4em;
+  }
+}
+#accueil a:first-child {
+  background-color: #fbdad6;
+}
+#accueil a:first-child h2 {
+  font-family: "Barcelony";
+  font-size: 2em;
+}
+#accueil a:first-child h3 {
+  font-family: "simplifica";
+  text-transform: uppercase;
+}
+#accueil a:first-child img {
+  height: 6vh;
+}
+#accueil a:nth-child(2) {
+  background-color: #fff3fe;
+  font-family: "Marmo-Regular";
+}
+#accueil a:nth-child(2) h2 {
+  font-size: 1.2em;
+}
+#accueil a:nth-child(2) h3 {
+  font-size: 1.1em;
+}
+#accueil a:nth-child(3) {
+  background-color: #f8f8f8;
+}
+#accueil a:nth-child(3) h2 {
+  font-family: "Dancing_Script";
+  font-size: 2em;
+}
+#accueil a:nth-child(3) h3 {
+  font-family: "Cervanttis";
+  font-size: 2em;
+}
+#accueil a:nth-child(4) {
+  background-color: #fafafa;
+}
+#accueil a:nth-child(4) h2 {
+  font-family: "Holiday+Romance";
+  font-size: 2em;
+}
+#accueil a:nth-child(4) h3 {
+  font-family: "Cervanttis";
+  font-size: 2em;
+}
+#accueil ah2 {
+  transition-duration: 1s;
+}
+#accueil h2 {
+  max-width: 100%;
+  margin: 0;
+  height: auto;
+  transition-duration: 800ms;
+}
+#accueil h2:hover {
+  transform: scale(1.3);
+  opacity: 0.6;
+}
+
+/*TITLES GRADIENT COLOR MENUS ACCUEIL*/
+#note h2, #note h3 {
+  background: #7f00ff;
+  background: -moz-linear-gradient(left, #7f00ff 0%, #c700ff 100%);
+  background: -webkit-linear-gradient(left, #7f00ff 0%, #c700ff 100%);
+  background: linear-gradient(to right, #7f00ff 0%, #c700ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#7f00ff", endColorstr="#c700ff",GradientType=1 );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+#chic h2, #chic h3 {
+  background: #ff9900;
+  background: -moz-linear-gradient(left, #ff9900 1%, #7d5ea3 57%);
+  background: -webkit-linear-gradient(left, #ff9900 1%, #7d5ea3 57%);
+  background: linear-gradient(to right, #ff9900 1%, #7d5ea3 57%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ff9900", endColorstr="#7d5ea3",GradientType=1 );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+#delice h2, #delice h3 {
+  background: #00b7ea;
+  background: -moz-linear-gradient(left, #00b7ea 0%, #0060c1 100%);
+  background: -webkit-linear-gradient(left, #00b7ea 0%, #0060c1 100%);
+  background: linear-gradient(to right, #00b7ea 0%, #0060c1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00b7ea", endColorstr="#0060c1",GradientType=1 );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+#taste h2, #taste h3 {
+  background: #1eb500;
+  background: -moz-linear-gradient(left, #1eb500 0%, #74ff6b 100%);
+  background: -webkit-linear-gradient(left, #1eb500 0%, #74ff6b 100%);
+  background: linear-gradient(to right, #1eb500 0%, #74ff6b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1eb500", endColorstr="#74ff6b",GradientType=1 );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+/*SOON BUTTON*/
+#soon {
+  box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25), -6px -6px 10px 0 rgba(255, 255, 255, 0.55);
+  background-color: #699a88;
+  border-radius: 15px;
+  color: #fac047;
+  font-family: "Basier_Mono_Square_Regular";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5vw;
+}
+@media screen and (max-width: 767px) {
+  #soon {
+    max-height: 5vh;
+    width: 75vw;
+    font-size: 1.2em;
+    margin-bottom: 10vh;
+    margin-top: 1vh;
+  }
+}
+@media screen and (min-width: 767px) {
+  #soon {
+    max-height: 5vh;
+    width: 50vw;
+    font-size: 1.3em;
+    margin-bottom: 10vh;
+    margin-top: 1vh;
+  }
+}
+@media screen and (min-width: 1023px) {
+  #soon {
+    max-height: 5vh;
+    width: 40vw;
+    font-size: 1.5em;
+    margin-bottom: 15vh;
+    margin-top: 2vh;
+  }
+}
+@media screen and (min-width: 1199px) {
+  #soon {
+    max-height: 5vh;
+    width: 35vw;
+    font-size: 2em;
+    margin-bottom: 20vh;
+    margin-top: 2vh;
+  }
+}
+
+/*SOON BUTTON ELLIPSIS ANIMATION*/
+.ellipsis {
+  animation: ellipsis 1.2s infinite alternate;
+  animation-timing-function: linear;
+}
+.ellipsis:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.ellipsis:nth-child(3) {
+  animation-delay: 1s;
+}
+
+/*FOOTER LINKS LEGAL MENTION & CONTACT + LEGAL & CONTACT ANIMATION*/
+footer {
+  width: 100%;
+  background-color: #699a88;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+@media screen and (max-width: 767px) {
+  footer {
+    min-height: 7%;
+  }
+}
+@media screen and (min-width: 767px) {
+  footer {
+    min-height: 8%;
+  }
+}
+@media screen and (min-width: 1023px) {
+  footer {
+    min-height: 10%;
+  }
+}
+@media screen and (min-width: 1199px) {
+  footer {
+    min-height: 15%;
+  }
+}
+footer a {
+  cursor: default;
+  text-decoration: none;
+  font-family: "Basier_Mono_Square_Regular";
+  color: #fac047;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+@media screen and (max-width: 767px) {
+  footer a {
+    font-size: 0.8em;
+  }
+}
+@media screen and (min-width: 767px) {
+  footer a {
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 1023px) {
+  footer a {
+    font-size: 1.3em;
+  }
+}
+@media screen and (min-width: 1199px) {
+  footer a {
+    font-size: 1.8em;
+  }
+}
+footer a:hover {
+  animation: wiggle 10ms;
+  animation-iteration-count: 30;
 }
 
 /*# sourceMappingURL=style.css.map */
