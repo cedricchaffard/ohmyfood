@@ -271,7 +271,6 @@
         .note{
             padding-top: 3vh;
             height:6vh;
-            @include note-notation-responsive;
         }
         background-color:$background-color-menu1;
     }
@@ -423,7 +422,7 @@ header {
         @include neumorphic-shadow;
         margin:2vh;
         h3{
-            @include menu-font-size;
+            font-size: $menu-font-size;
         }
         /*MENU CARDS COLOR & H2/H3 FONT FAMILY and SIZE*/
         /*MENU1 NOTEENCHANTÉE*/
@@ -447,9 +446,10 @@ header {
             font-family: $menu2-font;
             h2{
                 font-size: 1.2em;
+                margin-top: 6vh;
             }
             h3{
-                font-size: 1.1em;
+                font-size: 1.3em;
             }
         }
         /*MENU3 DELICE*/
@@ -490,6 +490,7 @@ header {
             transform:scale(1.3);
             opacity:0.6;
         }
+
     }
 }
 
@@ -511,6 +512,123 @@ header {
 #taste h2,#taste h3{
     @include gradient-taste;
 
+}
+
+/*MENU PAGES*/
+
+/**//*MENUS LAYOUT*//**/
+
+/*MENUS COOKING FOOD + PRICES LAYOUT*/
+
+#menu1 {
+    @include menu-layout;
+    .note{
+        @include note-notation-responsive;
+    }
+    background-color:$background-color-menu1;
+}
+
+#menu2 {
+    @include menu-layout;
+    background-color:$background-color-menu2;
+    font-family: $menu2-font;
+
+    span{
+        @include gradient-chic;
+    }
+    h1{
+        font-family: $menu2-font;
+        @include gradient-chic;
+        font-size: 2em;
+    }
+    table td{
+        @include gradient-chic;
+        font-size: .6em;
+    }
+    .food-part-title{
+        font-size: .8em;
+    }
+}
+
+#menu3 {
+    @include menu-layout;
+    height:65vh;
+    background-color:$background-color-menu3;
+    h1{
+        font-family: $menu3-font;
+    }
+}
+
+#menu4 {
+    @include menu-layout;
+    background-color:$background-color-menu4;
+    h1{
+        font-family: $menu4-font;
+    }
+
+}
+
+/*UNDERLINED TITLES ANIMATION*/
+
+span{
+    @include underlined-titles;
+}
+
+/*BACK BUTTON*/
+div{
+    height: auto;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        @include back-button;
+        height: 3vh;
+        width: 20vw;
+        border-radius: 10px;
+        text-decoration: none;
+        margin-bottom: 10vh;
+    }
+}
+
+/*TERMS OF USE PAGE*/
+#terms-of-use{
+    @include terms-of-use;
+}
+
+#terms-legal{
+    display: none;
+}
+
+#terms-of-use-footer{
+    justify-content: center;
+}
+
+/*KEYFRAMES*/
+
+@keyframes ellipsis{
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes wiggle{
+    0%{
+        transform:rotate(0deg);
+    }
+    25%{
+        transform:rotate(-3deg);
+    }
+    75%{
+        transform:rotate(3deg);
+    }
+    100%{
+        transform:rotate(0deg);
+    }
 }
 
 /*SOON BUTTON*/
@@ -545,7 +663,7 @@ header {
 
 footer {
     @include footer-size;
-            width: 100%;
+    width: 100%;
     background-color: $theme-color;
     display: flex;
     justify-content: space-between;
@@ -566,6 +684,43 @@ footer {
         }
     }
 }
+
+/*UNDERLINED TITLES ANIMATION*/
+
+span{
+    @include underlined-titles;
+}
+
+/*BACK BUTTON*/
+div{
+    height: auto;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        @include back-button;
+        height: 3vh;
+        width: 20vw;
+        border-radius: 10px;
+        text-decoration: none;
+        margin-bottom: 10vh;
+    }
+}
+
+/*TERMS OF USE PAGE*/
+#terms-of-use{
+    @include terms-of-use;
+}
+
+#terms-legal{
+    display: none;
+}
+
+#terms-of-use-footer{
+    justify-content: center;
+}
+
 
 
 

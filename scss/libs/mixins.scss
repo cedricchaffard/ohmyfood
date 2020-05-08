@@ -78,67 +78,12 @@
 
 /*MENUS LAYOUT*/
 
-@mixin main{
-    /*MENU CARDS LAYOUT*/
-    display: flex;
-    max-width:100%;
-    padding:10vw;
-
-    justify-content: center;
-    /*MENU CARDS LAYOUT & DIMENSIONS*/
-    article {
-        @include menu_cards;
-        min-height:55vh;
-        width: 70vw;
-    }
-    /*MENU CARDS COLOR linked with LINK*/
-    a{
-        text-decoration: none;
-        @include cursor;
-        margin:2vh;
-        h3{
-            font-size: $menu-font-size;
-        }
-
-        /*MENU CARDS COLOR & H2/H3 FONT FAMILY and SIZE*/
-        /*MENU1 NOTEENCHANTÉE*/
-        &:first-child{
-            background-color:$background-color-menu1;
-            h2{
-                font-family: "Barcelony";
-                font-size:2em;
-            }
-            h3{
-                font-family:"simplifica";
-                text-transform: uppercase;
-            }
-            img{
-                height:6vh;
-            }
-        }
-
-        /*MENU NAMES ANIMATION DURATION*/
-        &h2{
-            transition-duration: 1s;
-        }
-    }
-    /*MENU NAMES & ANIMATION*/
-    h2{
-        max-width:100%;
-        margin: 0;
-        height:auto;
-        transition-duration: 800ms;
-        &:hover{
-            transform:scale(1.3);
-            opacity:0.6;
-        }
-    }
-}
 
 /*MENUS LAYOUT*/
 @mixin menu-layout{
     @include neumorphic-shadow;
     @include table-layout;
+    @include menu-layout-responsive-size;
     background: $neuback;
     display: flex;
     flex-direction: column;
@@ -149,8 +94,8 @@
     font-family: $table-font;
     font-size:0.6em;
     table td:first-child img{
-        width:10vh;
-        height:auto;
+        @include menus-img-responsive-size;
+
     }
     h1{
         font-size:2.5em;
@@ -158,6 +103,22 @@
         font-family: $menu1-font;
         margin-top:1vh;
         text-align: center;
+    }
+}
+
+@mixin menus-img-responsive-size{
+    @media screen and (max-width: $breakpoint-tablet){
+        width:10vw;
+        height:auto;
+    }
+    @media screen and (min-width: $breakpoint-tablet){
+        min-width:15vw;
+    }
+    @media screen and (min-width: $breakpoint-large){
+        min-width:18vw;
+    }
+    @media screen and (min-width: $breakpoint-xlarge){
+        min-width:20vw;
     }
 }
 
@@ -220,32 +181,36 @@
     align-items: center;
     cursor:default;
     margin: 2vh 0 15vh 0;
-    font-size:.8em;
     background-color: $theme-color;
     color: $main-texts-color;
+    font-size:.8em;
     width:15vw;
+    @include responsive-back-button;
     font-family: $secondary-font;
     @include neumorphic-shadow;
 }
 
+/*RESPONSIVE BACK BUTTON*/
+
 /*TERMS OF USE*/
 @mixin terms-of-use{
     font-family: $secondary-font;
+    @include terms-of-use-responsive-font-sizes;
     h2{
         background: $theme-color;
         width: 100%;
         text-align: center;
         color: $main-texts-color;
         @include neumorphic-shadow;
-        font-size: 1em;
+
     }
     h3{
-        font-size:.8em;
+
         margin:0 10vw 0 10vw;
     }
     p{
         margin:0 10vw 0 10vw;
-        font-size: .7em;
+
         border-top: .5px solid rgba(0, 0, 0, 0.25);
         border-bottom: .5px solid rgba(0, 0, 0, 0.25);
         margin-bottom: 2vh;
@@ -264,7 +229,7 @@
     }
 }
 
-/**//*RESPONSIVE MIXINS*//**/
+/**//**//*RESPONSIVE MIXINS*//**//**/
 
 @mixin h1-responsive-font-size{
     @media screen and (max-width: $breakpoint-tablet){
@@ -307,6 +272,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     @media screen and (max-width: $breakpoint-tablet){
         min-height:60vh;
         width: 80vw;
@@ -314,60 +280,74 @@
     @media screen and (min-width: $breakpoint-tablet){
         min-height:65vh;
         width: 40vw;
+
     }
     @media screen and (min-width: $breakpoint-large){
-        min-height:80vh;
+        min-height:70vh;
         width: 40vw;
+        font-size: 1.4em;
+        h3{
+            margin:0;
+        }
     }
     @media screen and (min-width: $breakpoint-xlarge){
         min-height:80vh;
         width: 35vw;
-    }
-}
-
-@mixin menu-font-size{
-    @media screen and (min-width: $breakpoint-tablet){
-        font-size: 2em;
-    }
-    @media screen and (min-width: $breakpoint-large){
-        font-size: 3em;
-    }
-    @media screen and (min-width: $breakpoint-xlarge){
-        font-size: 4em;
+        font-size: 1.6em;
     }
 }
 
 /*RESPONSIVE MENU LAYOUT*/
 
-
 @mixin note-notation-responsive{
     @media screen and (min-width: $breakpoint-tablet){
         padding-top: 3vh;
-            height:6vh;
+        height:6vh;
     }
     @media screen and (min-width: $breakpoint-large){
         padding-top: 3vh;
-            height:6vh;
+        height:6vh;
     }
     @media screen and (min-width: $breakpoint-xlarge){
         padding-top: 3vh;
-            height:6vh;
+        height:6vh;
     }
 }
+
+/*MENUS LAYOUT RESPONSIVE SIZE*/
+@mixin menu-layout-responsive-size{
+    @media screen and (min-width: $breakpoint-tablet){
+        height: 100vh;
+        width:85vw;
+        font-size:1em;
+    }
+    @media screen and (min-width: $breakpoint-large){
+        width:85vw;
+        height:95vh;
+        font-size:1.5em;
+    }
+    @media screen and (min-width: $breakpoint-xlarge){
+        width:85vw;
+        height:100vh;
+        font-size:2em;
+    }
+}
+
+
+
 
 /*SOON BUTTON*/
 @mixin soon-button-size{
     @media screen and (max-width: $breakpoint-tablet){
         max-height:5vh;
-        width: 75vw;
+        width: 70vw;
         font-size:1.2em;
         margin-bottom:10vh;
         margin-top: 1vh;
     }
     @media screen and (min-width: $breakpoint-tablet){
-        max-height:5vh;
-        width: 50vw;
-        font-size:1.3em;
+        width: 35vw;
+        font-size:1.1em;
         margin-bottom:10vh;
         margin-top: 1vh;
     }
@@ -379,23 +359,38 @@
         margin-top: 2vh;
     }
     @media screen and (min-width: $breakpoint-xlarge){
-        max-height:5vh;
-        width: 35vw;
-        font-size:2em;
-        margin-bottom:20vh;
+        width: 25vw;
+        font-size:1.8em;
+        margin-bottom:15vh;
         margin-top: 2vh;
     }
 }
 
-/*FOOTER*/
+/*RESPONSIVE BACK BUTTON SIZE*/
+
+@mixin responsive-back-button{
+    @media screen and (min-width: $breakpoint-tablet){
+        font-size:1.2em;
+        height:3vh;
+        margin-bottom: 11vh;
+    }
+    @media screen and (min-width: $breakpoint-large){
+        font-size:1.4em;
+        height:2.8vh;
+        margin-bottom: 13vh;
+    }
+    @media screen and (min-width: $breakpoint-xlarge){
+        font-size:2em;
+        height:3.5vh;
+        margin-bottom: 13vh;
+    }
+}
+
+/*RESPONSIVE FOOTER SIZE*/
 
 @mixin footer-size{
     @media screen and (max-width: $breakpoint-tablet){
         min-height:7%;
-        a{
-
-        }
-
     }
     @media screen and (min-width: $breakpoint-tablet){
         min-height:8%;
@@ -406,8 +401,7 @@
 
     }
     @media screen and (min-width: $breakpoint-xlarge){
-        min-height:15%;
-
+        min-height:10%;
     }
 
 }
@@ -425,7 +419,57 @@
 
     }
     @media screen and (min-width: $breakpoint-xlarge){
-        font-size:1.8em;
+        font-size:1.6em;
 
+    }
+}
+
+/*TERMS OF USE RESPONSIVE FONT SIZES*/
+@mixin terms-of-use-responsive-font-sizes{
+    @media screen and (max-width: $breakpoint-tablet){
+        h2{
+            font-size: 1em;
+        }
+        h3{
+            font-size:.8em;
+        }
+        p{
+            font-size: .7em;
+        }
+
+    }
+    @media screen and (min-width: $breakpoint-tablet){
+        h2{
+            font-size: 1.2em;
+        }
+        h3{
+            font-size: 1em;
+        }
+        p{
+            font-size: .8em;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-large){
+        h2{
+            font-size: 1.5em;
+        }
+        h3{
+            font-size: 1.2em;
+        }
+        p{
+            font-size: 1em;
+        }
+    }
+    @media screen and (min-width: $breakpoint-xlarge){
+        h2{
+            font-size: 2em;
+        }
+        h3{
+            font-size: 1.5em;
+        }
+        p{
+            font-size: 1.2em;
+        }
     }
 }
