@@ -17,6 +17,7 @@
 /**/
 /*RESPONSIVE MENUS ACCUEIL*/
 /*RESPONSIVE MENUS SIZE*/
+/*RESPONSIVE MENU LAYOUT*/
 /*SOON BUTTON*/
 /*FOOTER*/
 /*SCSS VARIABLES CREATION*/
@@ -154,13 +155,13 @@
 
   /*KEYFRAMES*/
 }
-@media screen and (max-width: 767px) and (max-width: 767px) {
+@media screen and (max-width: 767px) and (max-width: 768px) {
   #accueil article {
     min-height: 60vh;
     width: 80vw;
   }
 }
-@media screen and (max-width: 767px) and (min-width: 767px) {
+@media screen and (max-width: 767px) and (min-width: 768px) {
   #accueil article {
     min-height: 65vh;
     width: 40vw;
@@ -176,6 +177,38 @@
   #accueil article {
     min-height: 80vh;
     width: 35vw;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 768px) {
+  #accueil article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 768px) {
+  #accueil article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 1023px) {
+  #accueil article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 1199px) {
+  #accueil article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (max-width: 767px) {
@@ -409,6 +442,24 @@
     margin-top: 1vh;
     text-align: center;
   }
+  #menu1 .note {
+    padding-top: 3vh;
+    height: 6vh;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 768px) {
+  #menu1 .note {
+    padding-top: 3vh;
+    height: 6vh;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 1023px) {
+  #menu1 .note {
+    padding-top: 3vh;
+    height: 6vh;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 1199px) {
   #menu1 .note {
     padding-top: 3vh;
     height: 6vh;
@@ -772,12 +823,12 @@ header h1 {
   cursor: default;
   font-family: "anonymous";
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   header h1 {
     font-size: 2.5em;
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   header h1 {
     font-size: 3em;
   }
@@ -804,7 +855,7 @@ header a {
   /*MENU CARDS COLOR linked with LINK*/
   /*MENU NAMES & ANIMATION*/
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   #accueil {
     display: flex;
     flex-direction: column;
@@ -812,7 +863,7 @@ header a {
     align-items: center;
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   #accueil {
     display: flex;
     flex-wrap: wrap;
@@ -843,13 +894,13 @@ header a {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   #accueil article {
     min-height: 60vh;
     width: 80vw;
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   #accueil article {
     min-height: 65vh;
     width: 40vw;
@@ -879,7 +930,7 @@ header a {
   /*MENU4 TASTE*/
   /*MENU NAMES ANIMATION DURATION*/
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   #accueil a h3 {
     font-size: 2em;
   }
@@ -1007,7 +1058,7 @@ header a {
   align-items: center;
   padding: 1.5vw;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   #soon {
     max-height: 5vh;
     width: 75vw;
@@ -1016,7 +1067,7 @@ header a {
     margin-top: 1vh;
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   #soon {
     max-height: 5vh;
     width: 50vw;
@@ -1066,12 +1117,12 @@ footer {
   position: fixed;
   bottom: 0;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   footer {
     min-height: 7%;
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   footer {
     min-height: 8%;
   }
@@ -1094,12 +1145,12 @@ footer a {
   margin-left: 3vw;
   margin-right: 3vw;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   footer a {
     font-size: 0.8em;
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   footer a {
     font-size: 1em;
   }

@@ -103,6 +103,7 @@
         /*MENU CARDS LAYOUT & DIMENSIONS*/
         article {
             @include menu_cards;
+            @include responsive-accueil;
         }
         /*MENU CARDS COLOR linked with LINK*/
         a{
@@ -270,6 +271,7 @@
         .note{
             padding-top: 3vh;
             height:6vh;
+            @include note-notation-responsive;
         }
         background-color:$background-color-menu1;
     }
@@ -517,8 +519,6 @@ header {
     @include soon-button-size;
     @include neumorphic-shadow;
     background-color: $theme-color;
-
-
     border-radius:15px;
     color:$main-texts-color;
     font-family: $secondary-font;
