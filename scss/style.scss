@@ -280,20 +280,16 @@
         background-color:$background-color-menu2;
         font-family: $menu2-font;
         height:65vh;
-        span{
-            @include gradient-chic;
-        }
         h1{
             font-family: $menu2-font;
             @include gradient-chic;
             font-size: 2em;
         }
         table td{
-            @include gradient-chic;
             font-size: .6em;
         }
         .food-part-title{
-            font-size: .8em;
+            @include food-part-title-mixin;
         }
     }
 
@@ -532,21 +528,17 @@ header {
     @include menu-layout;
     background-color:$background-color-menu2;
     font-family: $menu2-font;
-
-    span{
-        @include gradient-chic;
-    }
     h1{
         font-family: $menu2-font;
         @include gradient-chic;
         font-size: 2em;
     }
     table td{
-        @include gradient-chic;
+
         font-size: .6em;
     }
     .food-part-title{
-        font-size: .8em;
+        @include food-part-title-mixin
     }
 }
 

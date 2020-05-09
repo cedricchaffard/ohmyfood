@@ -76,6 +76,45 @@
 
 }
 
+/*MENU2 DIFFERENT COLOR PER CATEGORIES MIXIN*/
+@mixin food-part-title-mixin{
+        font-size: .8em;
+        color:rgb(185 119 47);
+        ~tr:nth-child(2){
+            color:rgb(185 119 47);
+        }
+        ~tr:nth-child(3){
+            color:rgb(185 119 47);
+        }
+        ~tr:nth-child(4){
+            color:rgb(185 119 47);
+        }
+        ~tr:nth-child(5){
+            color:rgb(155 106 150);
+        }
+        ~tr:nth-child(6){
+            color:rgb(155 106 150);
+        }
+        ~tr:nth-child(7){
+            color:rgb(155 106 150);
+        }
+        ~tr:nth-child(8){
+            color:rgb(155 106 150);
+        }
+        ~tr:nth-child(9){
+            color:rgb(104 81 197);
+        }
+        ~tr:nth-child(10){
+            color:rgb(104 81 197);
+        }
+        ~tr:nth-child(11){
+            color:rgb(104 81 197);
+        }
+        ~tr:nth-child(12){
+            color:rgb(104 81 197);
+        }
+    }
+
 /*MENUS LAYOUT*/
 
 
@@ -109,7 +148,6 @@
 @mixin menus-img-responsive-size{
     @media screen and (max-width: $breakpoint-tablet){
         width:10vw;
-        height:auto;
     }
     @media screen and (min-width: $breakpoint-tablet){
         min-width:15vw;

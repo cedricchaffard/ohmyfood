@@ -6,6 +6,7 @@
 /*TITLE1 GRADIANT COLOR MENU CHIC*/
 /*TITLE1 GRADIANT COLOR MENU CHIC*/
 /*TITLE1 GRADIANT COLOR MENU TASTE*/
+/*MENU2 DIFFERENT COLOR PER CATEGORIES MIXIN*/
 /*MENUS LAYOUT*/
 /*MENUS LAYOUT*/
 /*TABLE DESIGNATIONS & PRICES LAYOUTS*/
@@ -468,7 +469,6 @@
 @media screen and (max-width: 767px) and (max-width: 768px) {
   #menu1 table td:first-child img {
     width: 10vw;
-    height: auto;
   }
 }
 @media screen and (max-width: 767px) and (min-width: 768px) {
@@ -571,7 +571,6 @@
 @media screen and (max-width: 767px) and (max-width: 768px) {
   #menu2 table td:first-child img {
     width: 10vw;
-    height: auto;
   }
 }
 @media screen and (max-width: 767px) and (min-width: 768px) {
@@ -599,17 +598,6 @@
   }
 }
 @media (max-width: 767px) {
-  #menu2 span {
-    background: #ff9900;
-    background: -moz-linear-gradient(left, #ff9900 1%, #7d5ea3 57%);
-    background: -webkit-linear-gradient(left, #ff9900 1%, #7d5ea3 57%);
-    background: linear-gradient(to right, #ff9900 1%, #7d5ea3 57%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ff9900", endColorstr="#7d5ea3",GradientType=1 );
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-}
-@media (max-width: 767px) {
   #menu2 h1 {
     font-family: "Marmo-Regular";
     background: #ff9900;
@@ -624,19 +612,46 @@
 }
 @media (max-width: 767px) {
   #menu2 table td {
-    background: #ff9900;
-    background: -moz-linear-gradient(left, #ff9900 1%, #7d5ea3 57%);
-    background: -webkit-linear-gradient(left, #ff9900 1%, #7d5ea3 57%);
-    background: linear-gradient(to right, #ff9900 1%, #7d5ea3 57%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ff9900", endColorstr="#7d5ea3",GradientType=1 );
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
     font-size: 0.6em;
   }
 }
 @media (max-width: 767px) {
   #menu2 .food-part-title {
     font-size: 0.8em;
+    color: #b9772f;
+  }
+  #menu2 .food-part-title ~ tr:nth-child(2) {
+    color: #b9772f;
+  }
+  #menu2 .food-part-title ~ tr:nth-child(3) {
+    color: #b9772f;
+  }
+  #menu2 .food-part-title ~ tr:nth-child(4) {
+    color: #b9772f;
+  }
+  #menu2 .food-part-title ~ tr:nth-child(5) {
+    color: #9b6a96;
+  }
+  #menu2 .food-part-title ~ tr:nth-child(6) {
+    color: #9b6a96;
+  }
+  #menu2 .food-part-title ~ tr:nth-child(7) {
+    color: #9b6a96;
+  }
+  #menu2 .food-part-title ~ tr:nth-child(8) {
+    color: #9b6a96;
+  }
+  #menu2 .food-part-title ~ tr:nth-child(9) {
+    color: #6851c5;
+  }
+  #menu2 .food-part-title ~ tr:nth-child(10) {
+    color: #6851c5;
+  }
+  #menu2 .food-part-title ~ tr:nth-child(11) {
+    color: #6851c5;
+  }
+  #menu2 .food-part-title ~ tr:nth-child(12) {
+    color: #6851c5;
   }
 }
 @media (max-width: 767px) {
@@ -708,7 +723,6 @@
 @media screen and (max-width: 767px) and (max-width: 768px) {
   #menu3 table td:first-child img {
     width: 10vw;
-    height: auto;
   }
 }
 @media screen and (max-width: 767px) and (min-width: 768px) {
@@ -808,7 +822,6 @@
 @media screen and (max-width: 767px) and (max-width: 768px) {
   #menu4 table td:first-child img {
     width: 10vw;
-    height: auto;
   }
 }
 @media screen and (max-width: 767px) and (min-width: 768px) {
@@ -1350,7 +1363,6 @@ header a {
 @media screen and (max-width: 768px) {
   #menu1 table td:first-child img {
     width: 10vw;
-    height: auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1461,7 +1473,6 @@ header a {
 @media screen and (max-width: 768px) {
   #menu2 table td:first-child img {
     width: 10vw;
-    height: auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1486,15 +1497,6 @@ header a {
   margin-top: 1vh;
   text-align: center;
 }
-#menu2 span {
-  background: #ff9900;
-  background: -moz-linear-gradient(left, #ff9900 1%, #7d5ea3 57%);
-  background: -webkit-linear-gradient(left, #ff9900 1%, #7d5ea3 57%);
-  background: linear-gradient(to right, #ff9900 1%, #7d5ea3 57%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ff9900", endColorstr="#7d5ea3",GradientType=1 );
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
 #menu2 h1 {
   font-family: "Marmo-Regular";
   background: #ff9900;
@@ -1507,17 +1509,44 @@ header a {
   font-size: 2em;
 }
 #menu2 table td {
-  background: #ff9900;
-  background: -moz-linear-gradient(left, #ff9900 1%, #7d5ea3 57%);
-  background: -webkit-linear-gradient(left, #ff9900 1%, #7d5ea3 57%);
-  background: linear-gradient(to right, #ff9900 1%, #7d5ea3 57%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ff9900", endColorstr="#7d5ea3",GradientType=1 );
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
   font-size: 0.6em;
 }
 #menu2 .food-part-title {
   font-size: 0.8em;
+  color: #b9772f;
+}
+#menu2 .food-part-title ~ tr:nth-child(2) {
+  color: #b9772f;
+}
+#menu2 .food-part-title ~ tr:nth-child(3) {
+  color: #b9772f;
+}
+#menu2 .food-part-title ~ tr:nth-child(4) {
+  color: #b9772f;
+}
+#menu2 .food-part-title ~ tr:nth-child(5) {
+  color: #9b6a96;
+}
+#menu2 .food-part-title ~ tr:nth-child(6) {
+  color: #9b6a96;
+}
+#menu2 .food-part-title ~ tr:nth-child(7) {
+  color: #9b6a96;
+}
+#menu2 .food-part-title ~ tr:nth-child(8) {
+  color: #9b6a96;
+}
+#menu2 .food-part-title ~ tr:nth-child(9) {
+  color: #6851c5;
+}
+#menu2 .food-part-title ~ tr:nth-child(10) {
+  color: #6851c5;
+}
+#menu2 .food-part-title ~ tr:nth-child(11) {
+  color: #6851c5;
+}
+#menu2 .food-part-title ~ tr:nth-child(12) {
+  color: #6851c5;
 }
 
 #menu3 {
@@ -1587,7 +1616,6 @@ header a {
 @media screen and (max-width: 768px) {
   #menu3 table td:first-child img {
     width: 10vw;
-    height: auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1682,7 +1710,6 @@ header a {
 @media screen and (max-width: 768px) {
   #menu4 table td:first-child img {
     width: 10vw;
-    height: auto;
   }
 }
 @media screen and (min-width: 768px) {
