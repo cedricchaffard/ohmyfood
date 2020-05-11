@@ -63,17 +63,16 @@
     src: url("../font/Berrylicious/Berrylicious-Regular.otf") format("truetype");
 }
 
-/**//*RESPONSIVE VERSION*//**/
-@media (max-width: 767px){
-
+/**//*MOBILE FIRST VERSION*//**/
+@media (max-width: $breakpoint-tablet){
 
     body {
         margin:0;
-        cursor:default;
+        @include cursor;
         background: $neuback;
     }
 
-    /*HEADER THEME-COLOR: $theme-color / TEXT: $main-texts-color*/
+    /*HEADER THEME-COLOR: $theme-color GREEN / TEXT: $main-texts-color YELLOW*/
 
     header {
         background-color: $theme-color;
@@ -83,7 +82,7 @@
         & h1 {
             color:$main-texts-color;
             font-size:3em;
-            cursor:default;
+            @include cursor;
             font-family: "anonymous";
         }
         a{
@@ -194,12 +193,10 @@
 
     #delice h2,#delice h3{
         @include gradient-delice;
-
     }
 
     #taste h2,#taste h3{
         @include gradient-taste;
-
     }
 
     /*SOON BUTTON*/
@@ -224,12 +221,24 @@
     /*SOON BUTTON ELLIPSIS ANIMATION*/
 
     .ellipsis{
+        -webkit-animation: ellipsis 1.2s infinite alternate;
+        -moz-animation: ellipsis 1.2s infinite alternate;
+        -o-animation: ellipsis 1.2s infinite alternate;
         animation: ellipsis 1.2s infinite alternate;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-timing-function: linear;
+        -o-animation-timing-function: linear;
         animation-timing-function: linear;
         &:nth-child(2) {
+            -webkit-animation-delay: 0.5s;
+            -moz-animation-delay: 0.5s;
+            -o-animation-delay: 0.5s;
             animation-delay: 0.5s;
         }
         &:nth-child(3) {
+            -webkit-animation-delay: 1s;
+            -moz-animation-delay: 1s;
+            -o-animation-delay: 1s;
             animation-delay: 1s;
         }
     }
@@ -254,7 +263,13 @@
             margin-left:3vw;
             margin-right:3vw;
             &:hover{
+                -webkit-animation:wiggle 10ms;
+                -moz-animation:wiggle 10ms;
+                -o-animation:wiggle 10ms;
                 animation:wiggle 10ms;
+                -webkit-animation-iteration-count: 30;
+                -moz-animation-iteration-count: 30;
+                -o-animation-iteration-count: 30;
                 animation-iteration-count: 30;
             }
         }
@@ -269,8 +284,7 @@
     #menu1 {
         @include menu-layout;
         .note{
-            padding-top: 3vh;
-            height:6vh;
+            @include note-notation-responsive;
         }
         background-color:$background-color-menu1;
     }
@@ -349,6 +363,37 @@
 
     /*KEYFRAMES*/
 
+    /*ELLIPSIS SOON BUTTON ANIMATION*/
+    @-webkit-keyframes ellipsis{
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes ellipsis{
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-o-keyframes ellipsis{
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
     @keyframes ellipsis{
         0% {
             opacity: 0;
@@ -356,6 +401,52 @@
 
         100% {
             opacity: 1;
+        }
+    }
+
+    /*WIGGLE LEGAL & CONTACT ANIMATION*/
+    @-webkit-keyframes wiggle{
+        0%{
+            transform:rotate(0deg);
+        }
+        25%{
+            transform:rotate(-3deg);
+        }
+        75%{
+            transform:rotate(3deg);
+        }
+        100%{
+            transform:rotate(0deg);
+        }
+    }
+
+    @-moz-keyframes wiggle{
+        0%{
+            transform:rotate(0deg);
+        }
+        25%{
+            transform:rotate(-3deg);
+        }
+        75%{
+            transform:rotate(3deg);
+        }
+        100%{
+            transform:rotate(0deg);
+        }
+    }
+
+    @-o-keyframes wiggle{
+        0%{
+            transform:rotate(0deg);
+        }
+        25%{
+            transform:rotate(-3deg);
+        }
+        75%{
+            transform:rotate(3deg);
+        }
+        100%{
+            transform:rotate(0deg);
         }
     }
 
@@ -375,11 +466,11 @@
     }
 }
 
-/**//*RESPONSIVE TABLET DEVICES BREACKPOINT*//**/
+/**//*RESPONSIVE*//**/
 
 body {
     margin:0;
-    cursor:default;
+    @include cursor;
     background: $neuback;
 }
 
@@ -392,7 +483,7 @@ header {
     & h1 {
         color:$main-texts-color;
         @include h1-responsive-font-size;
-        cursor:default;
+        @include cursor;
         font-family: "anonymous";
     }
     a{
@@ -442,7 +533,8 @@ header {
             font-family: $menu2-font;
             h2{
                 font-size: 1.2em;
-                margin-top: 6vh;
+                margin-top: 5vh;
+                margin-bottom: 2vh;
             }
             h3{
                 font-size: 1.3em;
@@ -453,7 +545,7 @@ header {
             background-color:$background-color-menu3;
             h2{
                 font-family: "Dancing_Script";
-                font-size:2em;
+                font-size:1.8em;
             }
             h3{
                 @include menu-font-delice-taste;
@@ -534,11 +626,10 @@ header {
         font-size: 2em;
     }
     table td{
-
-        font-size: .6em;
+        font-size: .8em;
     }
     .food-part-title{
-        @include food-part-title-mixin
+        @include food-part-title-mixin;
     }
 }
 
@@ -598,6 +689,37 @@ div{
 
 /*KEYFRAMES*/
 
+/*ELLIPSIS SOON BUTTON ANIMATION*/
+@-webkit-keyframes ellipsis{
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes ellipsis{
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes ellipsis{
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 @keyframes ellipsis{
     0% {
         opacity: 0;
@@ -605,6 +727,52 @@ div{
 
     100% {
         opacity: 1;
+    }
+}
+
+/*WIGGLE LEGAL & CONTACT ANIMATION*/
+@-webkit-keyframes wiggle{
+    0%{
+        transform:rotate(0deg);
+    }
+    25%{
+        transform:rotate(-3deg);
+    }
+    75%{
+        transform:rotate(3deg);
+    }
+    100%{
+        transform:rotate(0deg);
+    }
+}
+
+@-moz-keyframes wiggle{
+    0%{
+        transform:rotate(0deg);
+    }
+    25%{
+        transform:rotate(-3deg);
+    }
+    75%{
+        transform:rotate(3deg);
+    }
+    100%{
+        transform:rotate(0deg);
+    }
+}
+
+@-o-keyframes wiggle{
+    0%{
+        transform:rotate(0deg);
+    }
+    25%{
+        transform:rotate(-3deg);
+    }
+    75%{
+        transform:rotate(3deg);
+    }
+    100%{
+        transform:rotate(0deg);
     }
 }
 
@@ -641,12 +809,24 @@ div{
 /*SOON BUTTON ELLIPSIS ANIMATION*/
 
 .ellipsis{
+    -webkit-animation: ellipsis 1.2s infinite alternate;
+    -moz-animation: ellipsis 1.2s infinite alternate;
+    -o-animation: ellipsis 1.2s infinite alternate;
     animation: ellipsis 1.2s infinite alternate;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
     animation-timing-function: linear;
     &:nth-child(2) {
+        -webkit-animation-delay: 0.5s;
+        -moz-animation-delay: 0.5s;
+        -o-animation-delay: 0.5s;
         animation-delay: 0.5s;
     }
     &:nth-child(3) {
+        -webkit-animation-delay: 1s;
+        -moz-animation-delay: 1s;
+        -o-animation-delay: 1s;
         animation-delay: 1s;
     }
 }
@@ -671,7 +851,13 @@ footer {
         margin-left:3vw;
         margin-right:3vw;
         &:hover{
+            -webkit-animation:wiggle 10ms;
+            -moz-animation:wiggle 10ms;
+            -o-animation:wiggle 10ms;
             animation:wiggle 10ms;
+            -webkit-animation-iteration-count: 30;
+            -moz-animation-iteration-count: 30;
+            -o-animation-iteration-count: 30;
             animation-iteration-count: 30;
         }
     }

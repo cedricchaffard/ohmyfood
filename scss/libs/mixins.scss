@@ -78,42 +78,42 @@
 
 /*MENU2 DIFFERENT COLOR PER CATEGORIES MIXIN*/
 @mixin food-part-title-mixin{
-        font-size: .8em;
+    font-size: .8em;
+    color:rgb(185 119 47);
+    ~tr:nth-child(2){
         color:rgb(185 119 47);
-        ~tr:nth-child(2){
-            color:rgb(185 119 47);
-        }
-        ~tr:nth-child(3){
-            color:rgb(185 119 47);
-        }
-        ~tr:nth-child(4){
-            color:rgb(185 119 47);
-        }
-        ~tr:nth-child(5){
-            color:rgb(155 106 150);
-        }
-        ~tr:nth-child(6){
-            color:rgb(155 106 150);
-        }
-        ~tr:nth-child(7){
-            color:rgb(155 106 150);
-        }
-        ~tr:nth-child(8){
-            color:rgb(155 106 150);
-        }
-        ~tr:nth-child(9){
-            color:rgb(104 81 197);
-        }
-        ~tr:nth-child(10){
-            color:rgb(104 81 197);
-        }
-        ~tr:nth-child(11){
-            color:rgb(104 81 197);
-        }
-        ~tr:nth-child(12){
-            color:rgb(104 81 197);
-        }
     }
+    ~tr:nth-child(3){
+        color:rgb(185 119 47);
+    }
+    ~tr:nth-child(4){
+        color:rgb(185 119 47);
+    }
+    ~tr:nth-child(5){
+        color:rgb(155 106 150);
+    }
+    ~tr:nth-child(6){
+        color:rgb(155 106 150);
+    }
+    ~tr:nth-child(7){
+        color:rgb(155 106 150);
+    }
+    ~tr:nth-child(8){
+        color:rgb(155 106 150);
+    }
+    ~tr:nth-child(9){
+        color:rgb(104 81 197);
+    }
+    ~tr:nth-child(10){
+        color:rgb(104 81 197);
+    }
+    ~tr:nth-child(11){
+        color:rgb(104 81 197);
+    }
+    ~tr:nth-child(12){
+        color:rgb(104 81 197);
+    }
+}
 
 /*MENUS LAYOUT*/
 
@@ -145,21 +145,6 @@
     }
 }
 
-@mixin menus-img-responsive-size{
-    @media screen and (max-width: $breakpoint-tablet){
-        width:10vw;
-    }
-    @media screen and (min-width: $breakpoint-tablet){
-        min-width:15vw;
-    }
-    @media screen and (min-width: $breakpoint-large){
-        min-width:18vw;
-    }
-    @media screen and (min-width: $breakpoint-xlarge){
-        min-width:20vw;
-    }
-}
-
 /*TABLE DESIGNATIONS & PRICES LAYOUTS*/
 @mixin table-layout{
     font-family: $table-font;
@@ -179,15 +164,14 @@
             text-align: center;
             .left{
                 float: left;
-                padding-top:1vh;
+                padding-top:1vw;
             }
             .right{
                 float: right;
-                padding-top:1vh;
+                padding-top:1vw;
             }
             img{
-                width:10vh;
-                height:auto;
+                @include menus-img-responsive-size;
             }
         }
     }
@@ -196,9 +180,6 @@
 /*UNDERLINED TITLES ANIMATION*/
 @mixin underlined-titles{
     display:inline-block;
-    &:hover:after{
-        width:100%;
-    }
     &:after{
         content:"";
         display:block;
@@ -208,6 +189,9 @@
         background-color:rgba(0, 0, 0, 0.6);
         transition:width;
         transition-duration: $underlined-titles-duration;
+    }
+    &:hover:after{
+        width:100%;
     }
 }
 
@@ -312,16 +296,17 @@
     align-items: center;
     overflow: hidden;
     @media screen and (max-width: $breakpoint-tablet){
-        min-height:60vh;
+        height:120vw;
         width: 80vw;
+        font-size:0.9em;
     }
     @media screen and (min-width: $breakpoint-tablet){
-        min-height:65vh;
-        width: 40vw;
-
+        min-height:55vw;
+        width: 35vw;
+        font-size:0.8em;
     }
     @media screen and (min-width: $breakpoint-large){
-        min-height:70vh;
+        min-height:55vw;
         width: 40vw;
         font-size: 1.4em;
         h3{
@@ -329,50 +314,74 @@
         }
     }
     @media screen and (min-width: $breakpoint-xlarge){
-        min-height:80vh;
+        min-height:55vw;
         width: 35vw;
         font-size: 1.6em;
     }
 }
 
 /*RESPONSIVE MENU LAYOUT*/
-
+/*NOTE NOTATION MENU1 RESPONSIVE SIZE*/
 @mixin note-notation-responsive{
+    @media screen and (max-width: $breakpoint-tablet){
+        padding-top: 6vw;
+        height:10vw;
+    }
     @media screen and (min-width: $breakpoint-tablet){
-        padding-top: 3vh;
-        height:6vh;
+
+        height:10vw;
     }
     @media screen and (min-width: $breakpoint-large){
-        padding-top: 3vh;
         height:6vh;
     }
     @media screen and (min-width: $breakpoint-xlarge){
         padding-top: 3vh;
-        height:6vh;
+        height:12vh;
     }
 }
 
 /*MENUS LAYOUT RESPONSIVE SIZE*/
 @mixin menu-layout-responsive-size{
-    @media screen and (min-width: $breakpoint-tablet){
-        height: 100vh;
+    @media screen and (max-width: $breakpoint-tablet){
+        padding-top: 10vw;
+        padding-bottom: 10vw;
         width:85vw;
-        font-size:1em;
+        font-size:.6em;
+        height: auto;
+    }
+    @media screen and (min-width: $breakpoint-tablet){
+height: auto;
+        width:85vw;
+        font-size:1.2em;
     }
     @media screen and (min-width: $breakpoint-large){
+min-height: 80vw;
         width:85vw;
-        height:95vh;
         font-size:1.5em;
     }
     @media screen and (min-width: $breakpoint-xlarge){
+min-height:80vw;
         width:85vw;
-        height:100vh;
         font-size:2em;
     }
 }
 
+/*MENUS IMG DESIGN RESPONSIVE SIZE*/
+@mixin menus-img-responsive-size{
+    @media screen and (max-width: $breakpoint-tablet){
+        width:15vw;
 
-
+    }
+    @media screen and (min-width: $breakpoint-tablet){
+        width:16vw;
+    }
+    @media screen and (min-width: $breakpoint-large){
+        min-width:18vw;
+    }
+    @media screen and (min-width: $breakpoint-xlarge){
+        min-width:20vw;
+    }
+}
 
 /*SOON BUTTON*/
 @mixin soon-button-size{
@@ -386,8 +395,7 @@
     @media screen and (min-width: $breakpoint-tablet){
         width: 35vw;
         font-size:1.1em;
-        margin-bottom:10vh;
-        margin-top: 1vh;
+        margin: 1vh 5vh 10vh 5vh;
     }
     @media screen and (min-width: $breakpoint-large){
         max-height:5vh;
@@ -409,17 +417,17 @@
 @mixin responsive-back-button{
     @media screen and (min-width: $breakpoint-tablet){
         font-size:1.2em;
-        height:3vh;
+        height:5vw;
         margin-bottom: 11vh;
     }
     @media screen and (min-width: $breakpoint-large){
         font-size:1.4em;
-        height:2.8vh;
+        height:3.5vw;
         margin-bottom: 13vh;
     }
     @media screen and (min-width: $breakpoint-xlarge){
         font-size:2em;
-        height:3.5vh;
+        height:5vw;
         margin-bottom: 13vh;
     }
 }
