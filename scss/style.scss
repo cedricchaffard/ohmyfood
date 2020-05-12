@@ -67,6 +67,7 @@
 @media (max-width: $breakpoint-tablet){
 
     body {
+        //BACKGROUND COLOR LIGHT GRAY
         margin:0;
         @include cursor;
         background: $neuback;
@@ -101,14 +102,14 @@
         align-items: center;
         /*MENU CARDS LAYOUT & DIMENSIONS*/
         article {
-            @include menu_cards;
-            @include responsive-accueil;
+            @include menu_cards; /*MIXINS.SCSS LIGNE 291*/
+            @include responsive-accueil; /*MIXINS.SCSS LIGNE 272*/
         }
         /*MENU CARDS COLOR linked with LINK*/
         a{
             text-decoration: none;
             @include cursor;
-            @include neumorphic-shadow;
+            @include neumorphic-shadow; /*MIXINS.SCSS LIGNE 19*/
             margin:2vh;
             h3{
                 font-size: $menu-font-size;
@@ -148,7 +149,7 @@
                     font-size:2em;
                 }
                 h3{
-                    @include menu-font-delice-taste;
+                    @include menu-font-delice-taste; /*MIXINS.SCSS LIGNE 73*/
                 }
             }
             /*MENU4 TASTE*/
@@ -160,7 +161,7 @@
                 }
 
                 h3{
-                    @include menu-font-delice-taste;
+                    @include menu-font-delice-taste; /*MIXINS.SCSS LIGNE 73*/
                 }
             }
             /*MENU NAMES ANIMATION DURATION*/
@@ -184,19 +185,19 @@
     /*TITLES GRADIENT COLOR MENUS ACCUEIL*/
 
     #note h2,#note h3{
-        @include gradient-note;
+        @include gradient-note; /*MIXINS.SCSS LIGNE 27*/
     }
 
     #chic h2,#chic h3{
-        @include gradient-chic;
+        @include gradient-chic; /*MIXINS.SCSS LIGNE 39*/
     }
 
     #delice h2,#delice h3{
-        @include gradient-delice;
+        @include gradient-delice; /*MIXINS.SCSS LIGNE 51*/
     }
 
     #taste h2,#taste h3{
-        @include gradient-taste;
+        @include gradient-taste; /*MIXINS.SCSS LIGNE 63*/
     }
 
     /*SOON BUTTON*/
@@ -215,7 +216,7 @@
         align-items: center;
         font-size:1.2em;
         padding:1.5vw;
-        @include neumorphic-shadow;
+        @include neumorphic-shadow; /*MIXINS.SCSS LIGNE 19*/
     }
 
     /*SOON BUTTON ELLIPSIS ANIMATION*/
@@ -282,33 +283,32 @@
     /*MENUS COOKING FOOD + PRICES LAYOUT*/
 
     #menu1 {
-        @include menu-layout;
+        @include menu-layout; /*MIXINS.SCSS LIGNE 122*/
         .note{
-            @include note-notation-responsive;
+            @include note-notation-responsive; /*MIXINS.SCSS LIGNE 325*/
         }
         background-color:$background-color-menu1;
     }
 
     #menu2 {
-        @include menu-layout;
+        @include menu-layout; /*MIXINS.SCSS LIGNE 122*/
         background-color:$background-color-menu2;
         font-family: $menu2-font;
-        height:65vh;
         h1{
             font-family: $menu2-font;
-            @include gradient-chic;
+            @include gradient-chic; /*MIXINS.SCSS LIGNE 39*/
             font-size: 2em;
         }
         table td{
             font-size: .6em;
         }
         .food-part-title{
-            @include food-part-title-mixin;
+            @include food-part-title-mixin; /*MIXINS.SCSS LIGNE 80*/
         }
     }
 
     #menu3 {
-        @include menu-layout;
+        @include menu-layout; /*MIXINS.SCSS LIGNE 122*/
         height:65vh;
         background-color:$background-color-menu3;
         h1{
@@ -317,7 +317,7 @@
     }
 
     #menu4 {
-        @include menu-layout;
+        @include menu-layout; /*MIXINS.SCSS LIGNE 122*/
         background-color:$background-color-menu4;
         h1{
             font-family: $menu4-font;
@@ -328,7 +328,7 @@
     /*UNDERLINED TITLES ANIMATION*/
 
     span{
-        @include underlined-titles;
+        @include underlined-titles; /*MIXINS.SCSS LIGNE 181*/
     }
 
     /*BACK BUTTON*/
@@ -339,7 +339,7 @@
         justify-content: center;
         align-items: center;
         a{
-            @include back-button;
+            @include back-button; /*MIXINS.SCSS LIGNE 200*/
             height: 3vh;
             width: 20vw;
             border-radius: 10px;
@@ -350,7 +350,7 @@
 
     /*TERMS OF USE PAGE*/
     #terms-of-use{
-        @include terms-of-use;
+        @include terms-of-use; /*MIXINS.SCSS LIGNE 218*/
     }
 
     #terms-legal{
@@ -406,62 +406,38 @@
 
     /*WIGGLE LEGAL & CONTACT ANIMATION*/
     @-webkit-keyframes wiggle{
-        0%{
-            transform:rotate(0deg);
-        }
         25%{
             transform:rotate(-3deg);
         }
         75%{
             transform:rotate(3deg);
-        }
-        100%{
-            transform:rotate(0deg);
         }
     }
 
     @-moz-keyframes wiggle{
-        0%{
-            transform:rotate(0deg);
-        }
         25%{
             transform:rotate(-3deg);
         }
         75%{
             transform:rotate(3deg);
-        }
-        100%{
-            transform:rotate(0deg);
         }
     }
 
     @-o-keyframes wiggle{
-        0%{
-            transform:rotate(0deg);
-        }
         25%{
             transform:rotate(-3deg);
         }
         75%{
             transform:rotate(3deg);
-        }
-        100%{
-            transform:rotate(0deg);
         }
     }
 
     @keyframes wiggle{
-        0%{
-            transform:rotate(0deg);
-        }
         25%{
             transform:rotate(-3deg);
         }
         75%{
             transform:rotate(3deg);
-        }
-        100%{
-            transform:rotate(0deg);
         }
     }
 }
@@ -482,7 +458,7 @@ header {
     align-items: center;
     & h1 {
         color:$main-texts-color;
-        @include h1-responsive-font-size;
+        @include h1-responsive-font-size; /*MIXINS.SCSS LIGNE 256*/
         @include cursor;
         font-family: "anonymous";
     }
@@ -497,16 +473,16 @@ header {
 #accueil {
     /*MENU CARDS LAYOUT*/
     max-width:100%;
-    @include responsive-accueil;
+    @include responsive-accueil; /*MIXINS.SCSS LIGNE 272*/
     /*MENU CARDS LAYOUT & DIMENSIONS*/
     article {
-        @include menu_cards;
+        @include menu_cards; /*MIXINS.SCSS LIGNE 291*/
     }
     /*MENU CARDS COLOR linked with LINK*/
     a{
         text-decoration: none;
-        @include cursor;
-        @include neumorphic-shadow;
+        @include cursor; /*MIXINS.SCSS LIGNE 8*/
+        @include neumorphic-shadow; /*MIXINS.SCSS LIGNE 19*/
         margin:2vh;
         h3{
             font-size: $menu-font-size;
@@ -548,7 +524,7 @@ header {
                 font-size:1.8em;
             }
             h3{
-                @include menu-font-delice-taste;
+                @include menu-font-delice-taste; /*MIXINS.SCSS LIGNE 73*/
             }
         }
         /*MENU4 TASTE*/
@@ -560,7 +536,7 @@ header {
             }
 
             h3{
-                @include menu-font-delice-taste;
+                @include menu-font-delice-taste; /*MIXINS.SCSS LIGNE 73*/
             }
         }
         /*MENU NAMES ANIMATION DURATION*/
@@ -585,20 +561,20 @@ header {
 /*TITLES GRADIENT COLOR MENUS ACCUEIL*/
 
 #note h2,#note h3{
-    @include gradient-note;
+    @include gradient-note; /*MIXINS.SCSS LIGNE 27*/
 }
 
 #chic h2,#chic h3{
-    @include gradient-chic;
+    @include gradient-chic; /*MIXINS.SCSS LIGNE 39*/
 }
 
 #delice h2,#delice h3{
-    @include gradient-delice;
+    @include gradient-delice; /*MIXINS.SCSS LIGNE 51*/
 
 }
 
 #taste h2,#taste h3{
-    @include gradient-taste;
+    @include gradient-taste; /*MIXINS.SCSS LIGNE 63*/
 
 }
 
@@ -609,32 +585,32 @@ header {
 /*MENUS COOKING FOOD + PRICES LAYOUT*/
 
 #menu1 {
-    @include menu-layout;
+    @include menu-layout; /*MIXINS.SCSS LIGNE 122*/
     .note{
-        @include note-notation-responsive;
+        @include note-notation-responsive; /*MIXINS.SCSS LIGNE 325*/
     }
     background-color:$background-color-menu1;
 }
 
 #menu2 {
-    @include menu-layout;
+    @include menu-layout; /*MIXINS.SCSS LIGNE 122*/
     background-color:$background-color-menu2;
     font-family: $menu2-font;
     h1{
         font-family: $menu2-font;
-        @include gradient-chic;
+        @include gradient-chic; /*MIXINS.SCSS LIGNE 39*/
         font-size: 2em;
     }
     table td{
         font-size: .8em;
     }
     .food-part-title{
-        @include food-part-title-mixin;
+        @include food-part-title-mixin; /*MIXINS.SCSS LIGNE 80*/
     }
 }
 
 #menu3 {
-    @include menu-layout;
+    @include menu-layout; /*MIXINS.SCSS LIGNE 122*/
     height:65vh;
     background-color:$background-color-menu3;
     h1{
@@ -643,7 +619,7 @@ header {
 }
 
 #menu4 {
-    @include menu-layout;
+    @include menu-layout; /*MIXINS.SCSS LIGNE 122*/
     background-color:$background-color-menu4;
     h1{
         font-family: $menu4-font;
@@ -654,7 +630,7 @@ header {
 /*UNDERLINED TITLES ANIMATION*/
 
 span{
-    @include underlined-titles;
+    @include underlined-titles; /*MIXINS.SCSS LIGNE 181*/
 }
 
 /*BACK BUTTON*/
@@ -665,7 +641,7 @@ div{
     justify-content: center;
     align-items: center;
     a{
-        @include back-button;
+        @include back-button; /*MIXINS.SCSS LIGNE 200*/
         height: 3vh;
         width: 20vw;
         border-radius: 10px;
@@ -676,7 +652,7 @@ div{
 
 /*TERMS OF USE PAGE*/
 #terms-of-use{
-    @include terms-of-use;
+    @include terms-of-use; /*MIXINS.SCSS LIGNE 218*/
 }
 
 #terms-legal{
@@ -732,70 +708,46 @@ div{
 
 /*WIGGLE LEGAL & CONTACT ANIMATION*/
 @-webkit-keyframes wiggle{
-    0%{
-        transform:rotate(0deg);
-    }
     25%{
         transform:rotate(-3deg);
     }
     75%{
         transform:rotate(3deg);
-    }
-    100%{
-        transform:rotate(0deg);
     }
 }
 
 @-moz-keyframes wiggle{
-    0%{
-        transform:rotate(0deg);
-    }
     25%{
         transform:rotate(-3deg);
     }
     75%{
         transform:rotate(3deg);
-    }
-    100%{
-        transform:rotate(0deg);
     }
 }
 
 @-o-keyframes wiggle{
-    0%{
-        transform:rotate(0deg);
-    }
     25%{
         transform:rotate(-3deg);
     }
     75%{
         transform:rotate(3deg);
-    }
-    100%{
-        transform:rotate(0deg);
     }
 }
 
 @keyframes wiggle{
-    0%{
-        transform:rotate(0deg);
-    }
     25%{
         transform:rotate(-3deg);
     }
     75%{
         transform:rotate(3deg);
-    }
-    100%{
-        transform:rotate(0deg);
     }
 }
 
 /*SOON BUTTON*/
 
 #soon{
-    @include soon-button-size;
-    @include neumorphic-shadow;
+    @include soon-button-size; /*MIXINS.SCSS LIGNE 387*/
+    @include neumorphic-shadow; /*MIXINS.SCSS LIGNE 19*/
     background-color: $theme-color;
     border-radius:15px;
     color:$main-texts-color;
@@ -834,7 +786,7 @@ div{
 /*FOOTER LINKS LEGAL MENTION & CONTACT + LEGAL & CONTACT ANIMATION*/
 
 footer {
-    @include footer-size;
+    @include footer-size; /*MIXINS.SCSS LIGNE 437*/
     width: 100%;
     background-color: $theme-color;
     display: flex;
@@ -843,7 +795,7 @@ footer {
     position:fixed;
     bottom: 0;
     a{
-        @include footer-link-size;
+        @include footer-link-size; /*MIXINS.SCSS LIGNE 455*/
         cursor:default;
         text-decoration: none;
         font-family: $secondary-font;
@@ -866,7 +818,7 @@ footer {
 /*UNDERLINED TITLES ANIMATION*/
 
 span{
-    @include underlined-titles;
+    @include underlined-titles; /*MIXINS.SCSS LIGNE 181*/
 }
 
 /*BACK BUTTON*/
@@ -877,7 +829,7 @@ div{
     justify-content: center;
     align-items: center;
     a{
-        @include back-button;
+        @include back-button; /*MIXINS.SCSS LIGNE 200*/
         height: 3vh;
         width: 20vw;
         border-radius: 10px;
@@ -888,7 +840,7 @@ div{
 
 /*TERMS OF USE PAGE*/
 #terms-of-use{
-    @include terms-of-use;
+    @include terms-of-use; /*MIXINS.SCSS LIGNE 218*/
 }
 
 #terms-legal{

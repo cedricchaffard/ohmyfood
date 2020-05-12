@@ -141,6 +141,8 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    /*MIXINS.SCSS LIGNE 291*/
+    /*MIXINS.SCSS LIGNE 272*/
   }
 
   /*TITLES GRADIENT COLOR MENUS ACCUEIL*/
@@ -181,7 +183,7 @@
     font-size: 0.8em;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1023px) {
+@media screen and (max-width: 576px) and (min-width: 1200px) {
   #accueil article {
     min-height: 55vw;
     width: 40vw;
@@ -191,7 +193,7 @@
     margin: 0;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1199px) {
+@media screen and (max-width: 576px) and (min-width: 1440px) {
   #accueil article {
     min-height: 55vw;
     width: 35vw;
@@ -214,7 +216,7 @@
     align-items: center;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1023px) {
+@media screen and (max-width: 576px) and (min-width: 1200px) {
   #accueil article {
     display: flex;
     flex-wrap: wrap;
@@ -222,7 +224,7 @@
     align-items: center;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1199px) {
+@media screen and (max-width: 576px) and (min-width: 1440px) {
   #accueil article {
     display: flex;
     flex-wrap: wrap;
@@ -235,6 +237,7 @@
     text-decoration: none;
     cursor: default;
     box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25), -6px -6px 10px 0 rgba(255, 255, 255, 0.55);
+    /*MIXINS.SCSS LIGNE 19*/
     margin: 2vh;
     /*MENU CARDS COLOR & H2/H3 FONT FAMILY and SIZE*/
     /*MENU1 NOTEENCHANTÉE*/
@@ -280,6 +283,7 @@
   #accueil a:nth-child(3) h3 {
     font-family: "Cervanttis";
     font-size: 2em;
+    /*MIXINS.SCSS LIGNE 73*/
   }
   #accueil a:nth-child(4) {
     background-color: #fefffd;
@@ -291,6 +295,7 @@
   #accueil a:nth-child(4) h3 {
     font-family: "Cervanttis";
     font-size: 2em;
+    /*MIXINS.SCSS LIGNE 73*/
   }
   #accueil ah2 {
     transition-duration: 1s;
@@ -317,6 +322,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#7f00ff", endColorstr="#c700ff",GradientType=1 );
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    /*MIXINS.SCSS LIGNE 27*/
   }
 }
 @media (max-width: 576px) {
@@ -328,6 +334,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ff9900", endColorstr="#7d5ea3",GradientType=1 );
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    /*MIXINS.SCSS LIGNE 39*/
   }
 }
 @media (max-width: 576px) {
@@ -339,6 +346,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00b7ea", endColorstr="#0060c1",GradientType=1 );
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    /*MIXINS.SCSS LIGNE 51*/
   }
 }
 @media (max-width: 576px) {
@@ -350,6 +358,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1eb500", endColorstr="#74ff6b",GradientType=1 );
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    /*MIXINS.SCSS LIGNE 63*/
   }
 }
 @media (max-width: 576px) {
@@ -368,6 +377,7 @@
     font-size: 1.2em;
     padding: 1.5vw;
     box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25), -6px -6px 10px 0 rgba(255, 255, 255, 0.55);
+    /*MIXINS.SCSS LIGNE 19*/
   }
 }
 @media (max-width: 576px) {
@@ -440,6 +450,7 @@
     padding: 0 1vh 5vh 1vh;
     font-family: "Berrylicious";
     font-size: 0.6em;
+    /*MIXINS.SCSS LIGNE 122*/
     background-color: #f6e0dc;
   }
   #menu1 .price {
@@ -475,12 +486,12 @@
     width: 16vw;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1023px) {
+@media screen and (max-width: 576px) and (min-width: 1200px) {
   #menu1 .food-part-title td:first-child img {
     min-width: 18vw;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1199px) {
+@media screen and (max-width: 576px) and (min-width: 1440px) {
   #menu1 .food-part-title td:first-child img {
     min-width: 20vw;
   }
@@ -501,14 +512,14 @@
     font-size: 1.2em;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1023px) {
+@media screen and (max-width: 576px) and (min-width: 1200px) {
   #menu1 {
     min-height: 80vw;
     width: 85vw;
     font-size: 1.5em;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1199px) {
+@media screen and (max-width: 576px) and (min-width: 1440px) {
   #menu1 {
     min-height: 80vw;
     width: 85vw;
@@ -525,12 +536,12 @@
     width: 16vw;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1023px) {
+@media screen and (max-width: 576px) and (min-width: 1200px) {
   #menu1 table td:first-child img {
     min-width: 18vw;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1199px) {
+@media screen and (max-width: 576px) and (min-width: 1440px) {
   #menu1 table td:first-child img {
     min-width: 20vw;
   }
@@ -544,6 +555,11 @@
     text-align: center;
   }
 }
+@media (max-width: 576px) {
+  #menu1 .note {
+    /*MIXINS.SCSS LIGNE 325*/
+  }
+}
 @media screen and (max-width: 576px) and (max-width: 576px) {
   #menu1 .note {
     padding-top: 6vw;
@@ -555,12 +571,12 @@
     height: 10vw;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1023px) {
+@media screen and (max-width: 576px) and (min-width: 1200px) {
   #menu1 .note {
     height: 6vh;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1199px) {
+@media screen and (max-width: 576px) and (min-width: 1440px) {
   #menu1 .note {
     padding-top: 3vh;
     height: 12vh;
@@ -581,9 +597,9 @@
     padding: 0 1vh 5vh 1vh;
     font-family: "Berrylicious";
     font-size: 0.6em;
+    /*MIXINS.SCSS LIGNE 122*/
     background-color: #fff3fe;
     font-family: "Marmo-Regular";
-    height: 65vh;
   }
   #menu2 .price {
     text-align: right;
@@ -618,12 +634,12 @@
     width: 16vw;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1023px) {
+@media screen and (max-width: 576px) and (min-width: 1200px) {
   #menu2 .food-part-title td:first-child img {
     min-width: 18vw;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1199px) {
+@media screen and (max-width: 576px) and (min-width: 1440px) {
   #menu2 .food-part-title td:first-child img {
     min-width: 20vw;
   }
@@ -644,14 +660,14 @@
     font-size: 1.2em;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1023px) {
+@media screen and (max-width: 576px) and (min-width: 1200px) {
   #menu2 {
     min-height: 80vw;
     width: 85vw;
     font-size: 1.5em;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1199px) {
+@media screen and (max-width: 576px) and (min-width: 1440px) {
   #menu2 {
     min-height: 80vw;
     width: 85vw;
@@ -668,12 +684,12 @@
     width: 16vw;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1023px) {
+@media screen and (max-width: 576px) and (min-width: 1200px) {
   #menu2 table td:first-child img {
     min-width: 18vw;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1199px) {
+@media screen and (max-width: 576px) and (min-width: 1440px) {
   #menu2 table td:first-child img {
     min-width: 20vw;
   }
@@ -697,6 +713,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ff9900", endColorstr="#7d5ea3",GradientType=1 );
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    /*MIXINS.SCSS LIGNE 39*/
     font-size: 2em;
   }
 }
@@ -709,6 +726,7 @@
   #menu2 .food-part-title {
     font-size: 0.8em;
     color: #b9772f;
+    /*MIXINS.SCSS LIGNE 80*/
   }
   #menu2 .food-part-title ~ tr:nth-child(2) {
     color: #b9772f;
@@ -759,6 +777,7 @@
     padding: 0 1vh 5vh 1vh;
     font-family: "Berrylicious";
     font-size: 0.6em;
+    /*MIXINS.SCSS LIGNE 122*/
     height: 65vh;
     background-color: #eeefef;
   }
@@ -795,12 +814,12 @@
     width: 16vw;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1023px) {
+@media screen and (max-width: 576px) and (min-width: 1200px) {
   #menu3 .food-part-title td:first-child img {
     min-width: 18vw;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1199px) {
+@media screen and (max-width: 576px) and (min-width: 1440px) {
   #menu3 .food-part-title td:first-child img {
     min-width: 20vw;
   }
@@ -821,14 +840,14 @@
     font-size: 1.2em;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1023px) {
+@media screen and (max-width: 576px) and (min-width: 1200px) {
   #menu3 {
     min-height: 80vw;
     width: 85vw;
     font-size: 1.5em;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1199px) {
+@media screen and (max-width: 576px) and (min-width: 1440px) {
   #menu3 {
     min-height: 80vw;
     width: 85vw;
@@ -845,12 +864,12 @@
     width: 16vw;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1023px) {
+@media screen and (max-width: 576px) and (min-width: 1200px) {
   #menu3 table td:first-child img {
     min-width: 18vw;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1199px) {
+@media screen and (max-width: 576px) and (min-width: 1440px) {
   #menu3 table td:first-child img {
     min-width: 20vw;
   }
@@ -884,6 +903,7 @@
     padding: 0 1vh 5vh 1vh;
     font-family: "Berrylicious";
     font-size: 0.6em;
+    /*MIXINS.SCSS LIGNE 122*/
     background-color: #fefffd;
   }
   #menu4 .price {
@@ -919,12 +939,12 @@
     width: 16vw;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1023px) {
+@media screen and (max-width: 576px) and (min-width: 1200px) {
   #menu4 .food-part-title td:first-child img {
     min-width: 18vw;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1199px) {
+@media screen and (max-width: 576px) and (min-width: 1440px) {
   #menu4 .food-part-title td:first-child img {
     min-width: 20vw;
   }
@@ -945,14 +965,14 @@
     font-size: 1.2em;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1023px) {
+@media screen and (max-width: 576px) and (min-width: 1200px) {
   #menu4 {
     min-height: 80vw;
     width: 85vw;
     font-size: 1.5em;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1199px) {
+@media screen and (max-width: 576px) and (min-width: 1440px) {
   #menu4 {
     min-height: 80vw;
     width: 85vw;
@@ -969,12 +989,12 @@
     width: 16vw;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1023px) {
+@media screen and (max-width: 576px) and (min-width: 1200px) {
   #menu4 table td:first-child img {
     min-width: 18vw;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1199px) {
+@media screen and (max-width: 576px) and (min-width: 1440px) {
   #menu4 table td:first-child img {
     min-width: 20vw;
   }
@@ -996,6 +1016,7 @@
 @media (max-width: 576px) {
   span {
     display: inline-block;
+    /*MIXINS.SCSS LIGNE 181*/
   }
   span:after {
     content: "";
@@ -1031,6 +1052,7 @@
     width: 15vw;
     font-family: "Basier_Mono_Square_Regular";
     box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25), -6px -6px 10px 0 rgba(255, 255, 255, 0.55);
+    /*MIXINS.SCSS LIGNE 200*/
     height: 3vh;
     width: 20vw;
     border-radius: 10px;
@@ -1045,14 +1067,14 @@
     margin-bottom: 11vh;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1023px) {
+@media screen and (max-width: 576px) and (min-width: 1200px) {
   div a {
     font-size: 1.4em;
     height: 3.5vw;
     margin-bottom: 13vh;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1199px) {
+@media screen and (max-width: 576px) and (min-width: 1440px) {
   div a {
     font-size: 2em;
     height: 5vw;
@@ -1062,6 +1084,7 @@
 @media (max-width: 576px) {
   #terms-of-use {
     font-family: "Basier_Mono_Square_Regular";
+    /*MIXINS.SCSS LIGNE 218*/
   }
 }
 @media screen and (max-width: 576px) and (max-width: 576px) {
@@ -1086,7 +1109,7 @@
     font-size: 0.8em;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1023px) {
+@media screen and (max-width: 576px) and (min-width: 1200px) {
   #terms-of-use h2 {
     font-size: 1.5em;
   }
@@ -1097,7 +1120,7 @@
     font-size: 1em;
   }
 }
-@media screen and (max-width: 576px) and (min-width: 1199px) {
+@media screen and (max-width: 576px) and (min-width: 1440px) {
   #terms-of-use h2 {
     font-size: 2em;
   }
@@ -1209,65 +1232,41 @@
 }
 @media (max-width: 576px) {
   @-webkit-keyframes wiggle {
-    0% {
-      transform: rotate(0deg);
-    }
     25% {
       transform: rotate(-3deg);
     }
     75% {
       transform: rotate(3deg);
-    }
-    100% {
-      transform: rotate(0deg);
     }
   }
 }
 @media (max-width: 576px) {
   @-moz-keyframes wiggle {
-    0% {
-      transform: rotate(0deg);
-    }
     25% {
       transform: rotate(-3deg);
     }
     75% {
       transform: rotate(3deg);
-    }
-    100% {
-      transform: rotate(0deg);
     }
   }
 }
 @media (max-width: 576px) {
   @-o-keyframes wiggle {
-    0% {
-      transform: rotate(0deg);
-    }
     25% {
       transform: rotate(-3deg);
     }
     75% {
       transform: rotate(3deg);
-    }
-    100% {
-      transform: rotate(0deg);
     }
   }
 }
 @media (max-width: 576px) {
   @keyframes wiggle {
-    0% {
-      transform: rotate(0deg);
-    }
     25% {
       transform: rotate(-3deg);
     }
     75% {
       transform: rotate(3deg);
-    }
-    100% {
-      transform: rotate(0deg);
     }
   }
 }
@@ -1289,6 +1288,7 @@ header {
 }
 header h1 {
   color: #fac047;
+  /*MIXINS.SCSS LIGNE 256*/
   cursor: default;
   font-family: "anonymous";
 }
@@ -1302,12 +1302,12 @@ header h1 {
     font-size: 3em;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1200px) {
   header h1 {
     font-size: 4em;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1440px) {
   header h1 {
     font-size: 7em;
   }
@@ -1320,6 +1320,7 @@ header a {
 #accueil {
   /*MENU CARDS LAYOUT*/
   max-width: 100%;
+  /*MIXINS.SCSS LIGNE 272*/
   /*MENU CARDS LAYOUT & DIMENSIONS*/
   /*MENU CARDS COLOR linked with LINK*/
   /*MENU NAMES & ANIMATION*/
@@ -1340,7 +1341,7 @@ header a {
     align-items: center;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1200px) {
   #accueil {
     display: flex;
     flex-wrap: wrap;
@@ -1348,7 +1349,7 @@ header a {
     align-items: center;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1440px) {
   #accueil {
     display: flex;
     flex-wrap: wrap;
@@ -1363,6 +1364,7 @@ header a {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  /*MIXINS.SCSS LIGNE 291*/
 }
 @media screen and (max-width: 576px) {
   #accueil article {
@@ -1378,7 +1380,7 @@ header a {
     font-size: 0.8em;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1200px) {
   #accueil article {
     min-height: 55vw;
     width: 40vw;
@@ -1388,7 +1390,7 @@ header a {
     margin: 0;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1440px) {
   #accueil article {
     min-height: 55vw;
     width: 35vw;
@@ -1398,7 +1400,9 @@ header a {
 #accueil a {
   text-decoration: none;
   cursor: default;
+  /*MIXINS.SCSS LIGNE 8*/
   box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25), -6px -6px 10px 0 rgba(255, 255, 255, 0.55);
+  /*MIXINS.SCSS LIGNE 19*/
   margin: 2vh;
   /*MENU CARDS COLOR & H2/H3 FONT FAMILY and SIZE*/
   /*MENU1 NOTEENCHANTÉE*/
@@ -1446,6 +1450,7 @@ header a {
 #accueil a:nth-child(3) h3 {
   font-family: "Cervanttis";
   font-size: 2em;
+  /*MIXINS.SCSS LIGNE 73*/
 }
 #accueil a:nth-child(4) {
   background-color: #fefffd;
@@ -1457,6 +1462,7 @@ header a {
 #accueil a:nth-child(4) h3 {
   font-family: "Cervanttis";
   font-size: 2em;
+  /*MIXINS.SCSS LIGNE 73*/
 }
 #accueil ah2 {
   transition-duration: 1s;
@@ -1481,6 +1487,7 @@ header a {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#7f00ff", endColorstr="#c700ff",GradientType=1 );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  /*MIXINS.SCSS LIGNE 27*/
 }
 
 #chic h2, #chic h3 {
@@ -1491,6 +1498,7 @@ header a {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ff9900", endColorstr="#7d5ea3",GradientType=1 );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  /*MIXINS.SCSS LIGNE 39*/
 }
 
 #delice h2, #delice h3 {
@@ -1501,6 +1509,7 @@ header a {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00b7ea", endColorstr="#0060c1",GradientType=1 );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  /*MIXINS.SCSS LIGNE 51*/
 }
 
 #taste h2, #taste h3 {
@@ -1511,6 +1520,7 @@ header a {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1eb500", endColorstr="#74ff6b",GradientType=1 );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  /*MIXINS.SCSS LIGNE 63*/
 }
 
 /*MENU PAGES*/
@@ -1532,6 +1542,7 @@ header a {
   padding: 0 1vh 5vh 1vh;
   font-family: "Berrylicious";
   font-size: 0.6em;
+  /*MIXINS.SCSS LIGNE 122*/
   background-color: #f6e0dc;
 }
 #menu1 .price {
@@ -1566,12 +1577,12 @@ header a {
     width: 16vw;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1200px) {
   #menu1 .food-part-title td:first-child img {
     min-width: 18vw;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1440px) {
   #menu1 .food-part-title td:first-child img {
     min-width: 20vw;
   }
@@ -1592,14 +1603,14 @@ header a {
     font-size: 1.2em;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1200px) {
   #menu1 {
     min-height: 80vw;
     width: 85vw;
     font-size: 1.5em;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1440px) {
   #menu1 {
     min-height: 80vw;
     width: 85vw;
@@ -1616,12 +1627,12 @@ header a {
     width: 16vw;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1200px) {
   #menu1 table td:first-child img {
     min-width: 18vw;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1440px) {
   #menu1 table td:first-child img {
     min-width: 20vw;
   }
@@ -1632,6 +1643,9 @@ header a {
   font-family: "Barcelony";
   margin-top: 1vh;
   text-align: center;
+}
+#menu1 .note {
+  /*MIXINS.SCSS LIGNE 325*/
 }
 @media screen and (max-width: 576px) {
   #menu1 .note {
@@ -1644,12 +1658,12 @@ header a {
     height: 10vw;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1200px) {
   #menu1 .note {
     height: 6vh;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1440px) {
   #menu1 .note {
     padding-top: 3vh;
     height: 12vh;
@@ -1670,6 +1684,7 @@ header a {
   padding: 0 1vh 5vh 1vh;
   font-family: "Berrylicious";
   font-size: 0.6em;
+  /*MIXINS.SCSS LIGNE 122*/
   background-color: #fff3fe;
   font-family: "Marmo-Regular";
 }
@@ -1705,12 +1720,12 @@ header a {
     width: 16vw;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1200px) {
   #menu2 .food-part-title td:first-child img {
     min-width: 18vw;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1440px) {
   #menu2 .food-part-title td:first-child img {
     min-width: 20vw;
   }
@@ -1731,14 +1746,14 @@ header a {
     font-size: 1.2em;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1200px) {
   #menu2 {
     min-height: 80vw;
     width: 85vw;
     font-size: 1.5em;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1440px) {
   #menu2 {
     min-height: 80vw;
     width: 85vw;
@@ -1755,12 +1770,12 @@ header a {
     width: 16vw;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1200px) {
   #menu2 table td:first-child img {
     min-width: 18vw;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1440px) {
   #menu2 table td:first-child img {
     min-width: 20vw;
   }
@@ -1781,6 +1796,7 @@ header a {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ff9900", endColorstr="#7d5ea3",GradientType=1 );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  /*MIXINS.SCSS LIGNE 39*/
   font-size: 2em;
 }
 #menu2 table td {
@@ -1789,6 +1805,7 @@ header a {
 #menu2 .food-part-title {
   font-size: 0.8em;
   color: #b9772f;
+  /*MIXINS.SCSS LIGNE 80*/
 }
 #menu2 .food-part-title ~ tr:nth-child(2) {
   color: #b9772f;
@@ -1838,6 +1855,7 @@ header a {
   padding: 0 1vh 5vh 1vh;
   font-family: "Berrylicious";
   font-size: 0.6em;
+  /*MIXINS.SCSS LIGNE 122*/
   height: 65vh;
   background-color: #eeefef;
 }
@@ -1873,12 +1891,12 @@ header a {
     width: 16vw;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1200px) {
   #menu3 .food-part-title td:first-child img {
     min-width: 18vw;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1440px) {
   #menu3 .food-part-title td:first-child img {
     min-width: 20vw;
   }
@@ -1899,14 +1917,14 @@ header a {
     font-size: 1.2em;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1200px) {
   #menu3 {
     min-height: 80vw;
     width: 85vw;
     font-size: 1.5em;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1440px) {
   #menu3 {
     min-height: 80vw;
     width: 85vw;
@@ -1923,12 +1941,12 @@ header a {
     width: 16vw;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1200px) {
   #menu3 table td:first-child img {
     min-width: 18vw;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1440px) {
   #menu3 table td:first-child img {
     min-width: 20vw;
   }
@@ -1958,6 +1976,7 @@ header a {
   padding: 0 1vh 5vh 1vh;
   font-family: "Berrylicious";
   font-size: 0.6em;
+  /*MIXINS.SCSS LIGNE 122*/
   background-color: #fefffd;
 }
 #menu4 .price {
@@ -1992,12 +2011,12 @@ header a {
     width: 16vw;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1200px) {
   #menu4 .food-part-title td:first-child img {
     min-width: 18vw;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1440px) {
   #menu4 .food-part-title td:first-child img {
     min-width: 20vw;
   }
@@ -2018,14 +2037,14 @@ header a {
     font-size: 1.2em;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1200px) {
   #menu4 {
     min-height: 80vw;
     width: 85vw;
     font-size: 1.5em;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1440px) {
   #menu4 {
     min-height: 80vw;
     width: 85vw;
@@ -2042,12 +2061,12 @@ header a {
     width: 16vw;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1200px) {
   #menu4 table td:first-child img {
     min-width: 18vw;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1440px) {
   #menu4 table td:first-child img {
     min-width: 20vw;
   }
@@ -2066,6 +2085,7 @@ header a {
 /*UNDERLINED TITLES ANIMATION*/
 span {
   display: inline-block;
+  /*MIXINS.SCSS LIGNE 181*/
 }
 span:after {
   content: "";
@@ -2101,6 +2121,7 @@ div a {
   width: 15vw;
   font-family: "Basier_Mono_Square_Regular";
   box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25), -6px -6px 10px 0 rgba(255, 255, 255, 0.55);
+  /*MIXINS.SCSS LIGNE 200*/
   height: 3vh;
   width: 20vw;
   border-radius: 10px;
@@ -2114,14 +2135,14 @@ div a {
     margin-bottom: 11vh;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1200px) {
   div a {
     font-size: 1.4em;
     height: 3.5vw;
     margin-bottom: 13vh;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1440px) {
   div a {
     font-size: 2em;
     height: 5vw;
@@ -2132,6 +2153,7 @@ div a {
 /*TERMS OF USE PAGE*/
 #terms-of-use {
   font-family: "Basier_Mono_Square_Regular";
+  /*MIXINS.SCSS LIGNE 218*/
 }
 @media screen and (max-width: 576px) {
   #terms-of-use h2 {
@@ -2155,7 +2177,7 @@ div a {
     font-size: 0.8em;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1200px) {
   #terms-of-use h2 {
     font-size: 1.5em;
   }
@@ -2166,7 +2188,7 @@ div a {
     font-size: 1em;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1440px) {
   #terms-of-use h2 {
     font-size: 2em;
   }
@@ -2263,64 +2285,42 @@ div a {
 }
 /*WIGGLE LEGAL & CONTACT ANIMATION*/
 @-webkit-keyframes wiggle {
-  0% {
-    transform: rotate(0deg);
-  }
   25% {
     transform: rotate(-3deg);
   }
   75% {
     transform: rotate(3deg);
-  }
-  100% {
-    transform: rotate(0deg);
   }
 }
 @-moz-keyframes wiggle {
-  0% {
-    transform: rotate(0deg);
-  }
   25% {
     transform: rotate(-3deg);
   }
   75% {
     transform: rotate(3deg);
-  }
-  100% {
-    transform: rotate(0deg);
   }
 }
 @-o-keyframes wiggle {
-  0% {
-    transform: rotate(0deg);
-  }
   25% {
     transform: rotate(-3deg);
   }
   75% {
     transform: rotate(3deg);
-  }
-  100% {
-    transform: rotate(0deg);
   }
 }
 @keyframes wiggle {
-  0% {
-    transform: rotate(0deg);
-  }
   25% {
     transform: rotate(-3deg);
   }
   75% {
     transform: rotate(3deg);
-  }
-  100% {
-    transform: rotate(0deg);
   }
 }
 /*SOON BUTTON*/
 #soon {
+  /*MIXINS.SCSS LIGNE 387*/
   box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25), -6px -6px 10px 0 rgba(255, 255, 255, 0.55);
+  /*MIXINS.SCSS LIGNE 19*/
   background-color: #699a88;
   border-radius: 15px;
   color: #fac047;
@@ -2346,7 +2346,7 @@ div a {
     margin: 1vh 5vh 10vh 5vh;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1200px) {
   #soon {
     max-height: 5vh;
     width: 40vw;
@@ -2355,7 +2355,7 @@ div a {
     margin-top: 2vh;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1440px) {
   #soon {
     width: 25vw;
     font-size: 1.8em;
@@ -2390,6 +2390,7 @@ div a {
 
 /*FOOTER LINKS LEGAL MENTION & CONTACT + LEGAL & CONTACT ANIMATION*/
 footer {
+  /*MIXINS.SCSS LIGNE 437*/
   width: 100%;
   background-color: #699a88;
   display: flex;
@@ -2408,17 +2409,18 @@ footer {
     min-height: 8%;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1200px) {
   footer {
     min-height: 10%;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1440px) {
   footer {
     min-height: 10%;
   }
 }
 footer a {
+  /*MIXINS.SCSS LIGNE 455*/
   cursor: default;
   text-decoration: none;
   font-family: "Basier_Mono_Square_Regular";
@@ -2436,12 +2438,12 @@ footer a {
     font-size: 1em;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1200px) {
   footer a {
     font-size: 1.3em;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1440px) {
   footer a {
     font-size: 1.6em;
   }
@@ -2460,6 +2462,7 @@ footer a:hover {
 /*UNDERLINED TITLES ANIMATION*/
 span {
   display: inline-block;
+  /*MIXINS.SCSS LIGNE 181*/
 }
 span:after {
   content: "";
@@ -2495,6 +2498,7 @@ div a {
   width: 15vw;
   font-family: "Basier_Mono_Square_Regular";
   box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25), -6px -6px 10px 0 rgba(255, 255, 255, 0.55);
+  /*MIXINS.SCSS LIGNE 200*/
   height: 3vh;
   width: 20vw;
   border-radius: 10px;
@@ -2508,14 +2512,14 @@ div a {
     margin-bottom: 11vh;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1200px) {
   div a {
     font-size: 1.4em;
     height: 3.5vw;
     margin-bottom: 13vh;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1440px) {
   div a {
     font-size: 2em;
     height: 5vw;
@@ -2526,6 +2530,7 @@ div a {
 /*TERMS OF USE PAGE*/
 #terms-of-use {
   font-family: "Basier_Mono_Square_Regular";
+  /*MIXINS.SCSS LIGNE 218*/
 }
 @media screen and (max-width: 576px) {
   #terms-of-use h2 {
@@ -2549,7 +2554,7 @@ div a {
     font-size: 0.8em;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1200px) {
   #terms-of-use h2 {
     font-size: 1.5em;
   }
@@ -2560,7 +2565,7 @@ div a {
     font-size: 1em;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1440px) {
   #terms-of-use h2 {
     font-size: 2em;
   }
