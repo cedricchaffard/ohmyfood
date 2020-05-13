@@ -29,6 +29,7 @@
 /*RESPONSIVE BACK BUTTON SIZE*/
 /*RESPONSIVE FOOTER SIZE*/
 /*TERMS OF USE RESPONSIVE FONT SIZES*/
+/*ACCUEIL MAX-WIDTH*/
 /*SCSS VARIABLES CREATION*/
 /*GREEN*/
 /*YELLOW*/
@@ -141,8 +142,8 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    /*MIXINS.SCSS LIGNE 291*/
-    /*MIXINS.SCSS LIGNE 272*/
+    /*MIXINS.SCSS LIGNE 292*/
+    /*MIXINS.SCSS LIGNE 273*/
   }
 
   /*TITLES GRADIENT COLOR MENUS ACCUEIL*/
@@ -195,8 +196,8 @@
 }
 @media screen and (max-width: 576px) and (min-width: 1440px) {
   #accueil article {
-    min-height: 55vw;
-    width: 35vw;
+    min-height: 30vw;
+    width: 20vw;
     font-size: 1.6em;
   }
 }
@@ -453,9 +454,21 @@
     /*MIXINS.SCSS LIGNE 122*/
     background-color: #f6e0dc;
   }
+}
+@media screen and (max-width: 576px) and (min-width: 1440px) {
+  #menu1 {
+    max-width: 70%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 576px) {
   #menu1 .price {
     text-align: right;
   }
+}
+@media (max-width: 576px) {
   #menu1 .food-part-title {
     font-weight: bold;
   }
@@ -493,7 +506,7 @@
 }
 @media screen and (max-width: 576px) and (min-width: 1440px) {
   #menu1 .food-part-title td:first-child img {
-    min-width: 20vw;
+    min-width: 16vw;
   }
 }
 @media screen and (max-width: 576px) and (max-width: 576px) {
@@ -521,9 +534,10 @@
 }
 @media screen and (max-width: 576px) and (min-width: 1440px) {
   #menu1 {
-    min-height: 80vw;
-    width: 85vw;
-    font-size: 2em;
+    min-height: 60vw;
+    width: 50vw;
+    font-size: 1.5em;
+    border: 1px rgba(0, 0, 0, 0.1) solid;
   }
 }
 @media screen and (max-width: 576px) and (max-width: 576px) {
@@ -543,7 +557,7 @@
 }
 @media screen and (max-width: 576px) and (min-width: 1440px) {
   #menu1 table td:first-child img {
-    min-width: 20vw;
+    min-width: 16vw;
   }
 }
 @media (max-width: 576px) {
@@ -557,7 +571,7 @@
 }
 @media (max-width: 576px) {
   #menu1 .note {
-    /*MIXINS.SCSS LIGNE 325*/
+    /*MIXINS.SCSS LIGNE 326*/
   }
 }
 @media screen and (max-width: 576px) and (max-width: 576px) {
@@ -601,9 +615,21 @@
     background-color: #fff3fe;
     font-family: "Marmo-Regular";
   }
+}
+@media screen and (max-width: 576px) and (min-width: 1440px) {
+  #menu2 {
+    max-width: 70%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 576px) {
   #menu2 .price {
     text-align: right;
   }
+}
+@media (max-width: 576px) {
   #menu2 .food-part-title {
     font-weight: bold;
   }
@@ -641,7 +667,7 @@
 }
 @media screen and (max-width: 576px) and (min-width: 1440px) {
   #menu2 .food-part-title td:first-child img {
-    min-width: 20vw;
+    min-width: 16vw;
   }
 }
 @media screen and (max-width: 576px) and (max-width: 576px) {
@@ -669,9 +695,10 @@
 }
 @media screen and (max-width: 576px) and (min-width: 1440px) {
   #menu2 {
-    min-height: 80vw;
-    width: 85vw;
-    font-size: 2em;
+    min-height: 60vw;
+    width: 50vw;
+    font-size: 1.5em;
+    border: 1px rgba(0, 0, 0, 0.1) solid;
   }
 }
 @media screen and (max-width: 576px) and (max-width: 576px) {
@@ -691,7 +718,7 @@
 }
 @media screen and (max-width: 576px) and (min-width: 1440px) {
   #menu2 table td:first-child img {
-    min-width: 20vw;
+    min-width: 16vw;
   }
 }
 @media (max-width: 576px) {
@@ -781,9 +808,21 @@
     height: 65vh;
     background-color: #eeefef;
   }
+}
+@media screen and (max-width: 576px) and (min-width: 1440px) {
+  #menu3 {
+    max-width: 70%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 576px) {
   #menu3 .price {
     text-align: right;
   }
+}
+@media (max-width: 576px) {
   #menu3 .food-part-title {
     font-weight: bold;
   }
@@ -821,7 +860,7 @@
 }
 @media screen and (max-width: 576px) and (min-width: 1440px) {
   #menu3 .food-part-title td:first-child img {
-    min-width: 20vw;
+    min-width: 16vw;
   }
 }
 @media screen and (max-width: 576px) and (max-width: 576px) {
@@ -849,9 +888,10 @@
 }
 @media screen and (max-width: 576px) and (min-width: 1440px) {
   #menu3 {
-    min-height: 80vw;
-    width: 85vw;
-    font-size: 2em;
+    min-height: 60vw;
+    width: 50vw;
+    font-size: 1.5em;
+    border: 1px rgba(0, 0, 0, 0.1) solid;
   }
 }
 @media screen and (max-width: 576px) and (max-width: 576px) {
@@ -871,7 +911,7 @@
 }
 @media screen and (max-width: 576px) and (min-width: 1440px) {
   #menu3 table td:first-child img {
-    min-width: 20vw;
+    min-width: 16vw;
   }
 }
 @media (max-width: 576px) {
@@ -906,9 +946,21 @@
     /*MIXINS.SCSS LIGNE 122*/
     background-color: #fefffd;
   }
+}
+@media screen and (max-width: 576px) and (min-width: 1440px) {
+  #menu4 {
+    max-width: 70%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 576px) {
   #menu4 .price {
     text-align: right;
   }
+}
+@media (max-width: 576px) {
   #menu4 .food-part-title {
     font-weight: bold;
   }
@@ -946,7 +998,7 @@
 }
 @media screen and (max-width: 576px) and (min-width: 1440px) {
   #menu4 .food-part-title td:first-child img {
-    min-width: 20vw;
+    min-width: 16vw;
   }
 }
 @media screen and (max-width: 576px) and (max-width: 576px) {
@@ -974,9 +1026,10 @@
 }
 @media screen and (max-width: 576px) and (min-width: 1440px) {
   #menu4 {
-    min-height: 80vw;
-    width: 85vw;
-    font-size: 2em;
+    min-height: 60vw;
+    width: 50vw;
+    font-size: 1.5em;
+    border: 1px rgba(0, 0, 0, 0.1) solid;
   }
 }
 @media screen and (max-width: 576px) and (max-width: 576px) {
@@ -996,7 +1049,7 @@
 }
 @media screen and (max-width: 576px) and (min-width: 1440px) {
   #menu4 table td:first-child img {
-    min-width: 20vw;
+    min-width: 16vw;
   }
 }
 @media (max-width: 576px) {
@@ -1016,7 +1069,7 @@
 @media (max-width: 576px) {
   span {
     display: inline-block;
-    /*MIXINS.SCSS LIGNE 181*/
+    /*MIXINS.SCSS LIGNE 182*/
   }
   span:after {
     content: "";
@@ -1052,7 +1105,7 @@
     width: 15vw;
     font-family: "Basier_Mono_Square_Regular";
     box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25), -6px -6px 10px 0 rgba(255, 255, 255, 0.55);
-    /*MIXINS.SCSS LIGNE 200*/
+    /*MIXINS.SCSS LIGNE 201*/
     height: 3vh;
     width: 20vw;
     border-radius: 10px;
@@ -1076,15 +1129,16 @@
 }
 @media screen and (max-width: 576px) and (min-width: 1440px) {
   div a {
-    font-size: 2em;
-    height: 5vw;
+    font-size: 1.6em;
+    height: 2vw;
+    width: 10vw;
     margin-bottom: 13vh;
   }
 }
 @media (max-width: 576px) {
   #terms-of-use {
     font-family: "Basier_Mono_Square_Regular";
-    /*MIXINS.SCSS LIGNE 218*/
+    /*MIXINS.SCSS LIGNE 219*/
   }
 }
 @media screen and (max-width: 576px) and (max-width: 576px) {
@@ -1278,6 +1332,11 @@ body {
   cursor: default;
   background: #ebebeb;
 }
+@media screen and (min-width: 1440px) {
+  body {
+    background: white;
+  }
+}
 
 /*HEADER THEME-COLOR: $theme-color / TEXT: $main-texts-color*/
 header {
@@ -1286,9 +1345,21 @@ header {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 1440px) {
+  header {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    text-align: center;
+    font-size: 0.6em;
+  }
+}
 header h1 {
   color: #fac047;
-  /*MIXINS.SCSS LIGNE 256*/
+  /*MIXINS.SCSS LIGNE 257*/
   cursor: default;
   font-family: "anonymous";
 }
@@ -1320,10 +1391,21 @@ header a {
 #accueil {
   /*MENU CARDS LAYOUT*/
   max-width: 100%;
-  /*MIXINS.SCSS LIGNE 272*/
+  /*MIXIN.SCSS LIGNE*/
+  /*MIXINS.SCSS LIGNE 273*/
   /*MENU CARDS LAYOUT & DIMENSIONS*/
   /*MENU CARDS COLOR linked with LINK*/
   /*MENU NAMES & ANIMATION*/
+}
+@media screen and (min-width: 1440px) {
+  #accueil {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ebebeb;
+    font-size: 0.8em;
+  }
 }
 @media screen and (max-width: 576px) {
   #accueil {
@@ -1364,7 +1446,7 @@ header a {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  /*MIXINS.SCSS LIGNE 291*/
+  /*MIXINS.SCSS LIGNE 292*/
 }
 @media screen and (max-width: 576px) {
   #accueil article {
@@ -1392,8 +1474,8 @@ header a {
 }
 @media screen and (min-width: 1440px) {
   #accueil article {
-    min-height: 55vw;
-    width: 35vw;
+    min-height: 30vw;
+    width: 20vw;
     font-size: 1.6em;
   }
 }
@@ -1545,6 +1627,14 @@ header a {
   /*MIXINS.SCSS LIGNE 122*/
   background-color: #f6e0dc;
 }
+@media screen and (min-width: 1440px) {
+  #menu1 {
+    max-width: 70%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 #menu1 .price {
   text-align: right;
 }
@@ -1584,7 +1674,7 @@ header a {
 }
 @media screen and (min-width: 1440px) {
   #menu1 .food-part-title td:first-child img {
-    min-width: 20vw;
+    min-width: 16vw;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1612,9 +1702,10 @@ header a {
 }
 @media screen and (min-width: 1440px) {
   #menu1 {
-    min-height: 80vw;
-    width: 85vw;
-    font-size: 2em;
+    min-height: 60vw;
+    width: 50vw;
+    font-size: 1.5em;
+    border: 1px rgba(0, 0, 0, 0.1) solid;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1634,7 +1725,7 @@ header a {
 }
 @media screen and (min-width: 1440px) {
   #menu1 table td:first-child img {
-    min-width: 20vw;
+    min-width: 16vw;
   }
 }
 #menu1 h1 {
@@ -1645,7 +1736,7 @@ header a {
   text-align: center;
 }
 #menu1 .note {
-  /*MIXINS.SCSS LIGNE 325*/
+  /*MIXINS.SCSS LIGNE 326*/
 }
 @media screen and (max-width: 576px) {
   #menu1 .note {
@@ -1688,6 +1779,14 @@ header a {
   background-color: #fff3fe;
   font-family: "Marmo-Regular";
 }
+@media screen and (min-width: 1440px) {
+  #menu2 {
+    max-width: 70%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 #menu2 .price {
   text-align: right;
 }
@@ -1727,7 +1826,7 @@ header a {
 }
 @media screen and (min-width: 1440px) {
   #menu2 .food-part-title td:first-child img {
-    min-width: 20vw;
+    min-width: 16vw;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1755,9 +1854,10 @@ header a {
 }
 @media screen and (min-width: 1440px) {
   #menu2 {
-    min-height: 80vw;
-    width: 85vw;
-    font-size: 2em;
+    min-height: 60vw;
+    width: 50vw;
+    font-size: 1.5em;
+    border: 1px rgba(0, 0, 0, 0.1) solid;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1777,7 +1877,7 @@ header a {
 }
 @media screen and (min-width: 1440px) {
   #menu2 table td:first-child img {
-    min-width: 20vw;
+    min-width: 16vw;
   }
 }
 #menu2 h1 {
@@ -1859,6 +1959,14 @@ header a {
   height: 65vh;
   background-color: #eeefef;
 }
+@media screen and (min-width: 1440px) {
+  #menu3 {
+    max-width: 70%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 #menu3 .price {
   text-align: right;
 }
@@ -1898,7 +2006,7 @@ header a {
 }
 @media screen and (min-width: 1440px) {
   #menu3 .food-part-title td:first-child img {
-    min-width: 20vw;
+    min-width: 16vw;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1926,9 +2034,10 @@ header a {
 }
 @media screen and (min-width: 1440px) {
   #menu3 {
-    min-height: 80vw;
-    width: 85vw;
-    font-size: 2em;
+    min-height: 60vw;
+    width: 50vw;
+    font-size: 1.5em;
+    border: 1px rgba(0, 0, 0, 0.1) solid;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1948,7 +2057,7 @@ header a {
 }
 @media screen and (min-width: 1440px) {
   #menu3 table td:first-child img {
-    min-width: 20vw;
+    min-width: 16vw;
   }
 }
 #menu3 h1 {
@@ -1978,6 +2087,14 @@ header a {
   font-size: 0.6em;
   /*MIXINS.SCSS LIGNE 122*/
   background-color: #fefffd;
+}
+@media screen and (min-width: 1440px) {
+  #menu4 {
+    max-width: 70%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 #menu4 .price {
   text-align: right;
@@ -2018,7 +2135,7 @@ header a {
 }
 @media screen and (min-width: 1440px) {
   #menu4 .food-part-title td:first-child img {
-    min-width: 20vw;
+    min-width: 16vw;
   }
 }
 @media screen and (max-width: 576px) {
@@ -2046,9 +2163,10 @@ header a {
 }
 @media screen and (min-width: 1440px) {
   #menu4 {
-    min-height: 80vw;
-    width: 85vw;
-    font-size: 2em;
+    min-height: 60vw;
+    width: 50vw;
+    font-size: 1.5em;
+    border: 1px rgba(0, 0, 0, 0.1) solid;
   }
 }
 @media screen and (max-width: 576px) {
@@ -2068,7 +2186,7 @@ header a {
 }
 @media screen and (min-width: 1440px) {
   #menu4 table td:first-child img {
-    min-width: 20vw;
+    min-width: 16vw;
   }
 }
 #menu4 h1 {
@@ -2085,7 +2203,7 @@ header a {
 /*UNDERLINED TITLES ANIMATION*/
 span {
   display: inline-block;
-  /*MIXINS.SCSS LIGNE 181*/
+  /*MIXINS.SCSS LIGNE 182*/
 }
 span:after {
   content: "";
@@ -2121,7 +2239,7 @@ div a {
   width: 15vw;
   font-family: "Basier_Mono_Square_Regular";
   box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25), -6px -6px 10px 0 rgba(255, 255, 255, 0.55);
-  /*MIXINS.SCSS LIGNE 200*/
+  /*MIXINS.SCSS LIGNE 201*/
   height: 3vh;
   width: 20vw;
   border-radius: 10px;
@@ -2144,8 +2262,9 @@ div a {
 }
 @media screen and (min-width: 1440px) {
   div a {
-    font-size: 2em;
-    height: 5vw;
+    font-size: 1.6em;
+    height: 2vw;
+    width: 10vw;
     margin-bottom: 13vh;
   }
 }
@@ -2153,7 +2272,7 @@ div a {
 /*TERMS OF USE PAGE*/
 #terms-of-use {
   font-family: "Basier_Mono_Square_Regular";
-  /*MIXINS.SCSS LIGNE 218*/
+  /*MIXINS.SCSS LIGNE 219*/
 }
 @media screen and (max-width: 576px) {
   #terms-of-use h2 {
@@ -2318,7 +2437,7 @@ div a {
 }
 /*SOON BUTTON*/
 #soon {
-  /*MIXINS.SCSS LIGNE 387*/
+  /*MIXINS.SCSS LIGNE 388*/
   box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25), -6px -6px 10px 0 rgba(255, 255, 255, 0.55);
   /*MIXINS.SCSS LIGNE 19*/
   background-color: #699a88;
@@ -2357,8 +2476,8 @@ div a {
 }
 @media screen and (min-width: 1440px) {
   #soon {
-    width: 25vw;
-    font-size: 1.8em;
+    width: 16vw;
+    font-size: 1.5em;
     margin-bottom: 15vh;
     margin-top: 2vh;
   }
@@ -2390,7 +2509,8 @@ div a {
 
 /*FOOTER LINKS LEGAL MENTION & CONTACT + LEGAL & CONTACT ANIMATION*/
 footer {
-  /*MIXINS.SCSS LIGNE 437*/
+  /*MIXINS.SCSS LIGNE 547*/
+  /*MIXINS.SCSS LIGNE 438*/
   width: 100%;
   background-color: #699a88;
   display: flex;
@@ -2398,6 +2518,16 @@ footer {
   align-items: center;
   position: fixed;
   bottom: 0;
+}
+@media screen and (min-width: 1440px) {
+  footer {
+    width: 70%;
+    display: flex;
+    font-size: 0.8em;
+    justify-content: space-between;
+    left: 15%;
+    right: 15%;
+  }
 }
 @media screen and (max-width: 576px) {
   footer {
@@ -2420,7 +2550,7 @@ footer {
   }
 }
 footer a {
-  /*MIXINS.SCSS LIGNE 455*/
+  /*MIXINS.SCSS LIGNE 456*/
   cursor: default;
   text-decoration: none;
   font-family: "Basier_Mono_Square_Regular";
@@ -2462,7 +2592,7 @@ footer a:hover {
 /*UNDERLINED TITLES ANIMATION*/
 span {
   display: inline-block;
-  /*MIXINS.SCSS LIGNE 181*/
+  /*MIXINS.SCSS LIGNE 182*/
 }
 span:after {
   content: "";
@@ -2498,7 +2628,7 @@ div a {
   width: 15vw;
   font-family: "Basier_Mono_Square_Regular";
   box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25), -6px -6px 10px 0 rgba(255, 255, 255, 0.55);
-  /*MIXINS.SCSS LIGNE 200*/
+  /*MIXINS.SCSS LIGNE 201*/
   height: 3vh;
   width: 20vw;
   border-radius: 10px;
@@ -2521,8 +2651,9 @@ div a {
 }
 @media screen and (min-width: 1440px) {
   div a {
-    font-size: 2em;
-    height: 5vw;
+    font-size: 1.6em;
+    height: 2vw;
+    width: 10vw;
     margin-bottom: 13vh;
   }
 }
@@ -2530,7 +2661,7 @@ div a {
 /*TERMS OF USE PAGE*/
 #terms-of-use {
   font-family: "Basier_Mono_Square_Regular";
-  /*MIXINS.SCSS LIGNE 218*/
+  /*MIXINS.SCSS LIGNE 219*/
 }
 @media screen and (max-width: 576px) {
   #terms-of-use h2 {

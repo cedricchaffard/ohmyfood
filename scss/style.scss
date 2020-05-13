@@ -102,8 +102,8 @@
         align-items: center;
         /*MENU CARDS LAYOUT & DIMENSIONS*/
         article {
-            @include menu_cards; /*MIXINS.SCSS LIGNE 291*/
-            @include responsive-accueil; /*MIXINS.SCSS LIGNE 272*/
+            @include menu_cards; /*MIXINS.SCSS LIGNE 292*/
+            @include responsive-accueil; /*MIXINS.SCSS LIGNE 273*/
         }
         /*MENU CARDS COLOR linked with LINK*/
         a{
@@ -285,7 +285,7 @@
     #menu1 {
         @include menu-layout; /*MIXINS.SCSS LIGNE 122*/
         .note{
-            @include note-notation-responsive; /*MIXINS.SCSS LIGNE 325*/
+            @include note-notation-responsive; /*MIXINS.SCSS LIGNE 326*/
         }
         background-color:$background-color-menu1;
     }
@@ -328,7 +328,7 @@
     /*UNDERLINED TITLES ANIMATION*/
 
     span{
-        @include underlined-titles; /*MIXINS.SCSS LIGNE 181*/
+        @include underlined-titles; /*MIXINS.SCSS LIGNE 182*/
     }
 
     /*BACK BUTTON*/
@@ -339,7 +339,7 @@
         justify-content: center;
         align-items: center;
         a{
-            @include back-button; /*MIXINS.SCSS LIGNE 200*/
+            @include back-button; /*MIXINS.SCSS LIGNE 201*/
             height: 3vh;
             width: 20vw;
             border-radius: 10px;
@@ -350,7 +350,7 @@
 
     /*TERMS OF USE PAGE*/
     #terms-of-use{
-        @include terms-of-use; /*MIXINS.SCSS LIGNE 218*/
+        @include terms-of-use; /*MIXINS.SCSS LIGNE 219*/
     }
 
     #terms-legal{
@@ -448,17 +448,19 @@ body {
     margin:0;
     @include cursor;
     background: $neuback;
+    @include responsive-background-color;
 }
 
 /*HEADER THEME-COLOR: $theme-color / TEXT: $main-texts-color*/
 header {
+    @include max-width-header;
     background-color: $theme-color;
     display: flex;
     justify-content: center;
     align-items: center;
     & h1 {
         color:$main-texts-color;
-        @include h1-responsive-font-size; /*MIXINS.SCSS LIGNE 256*/
+        @include h1-responsive-font-size; /*MIXINS.SCSS LIGNE 257*/
         @include cursor;
         font-family: "anonymous";
     }
@@ -473,10 +475,11 @@ header {
 #accueil {
     /*MENU CARDS LAYOUT*/
     max-width:100%;
-    @include responsive-accueil; /*MIXINS.SCSS LIGNE 272*/
+    @include max-width-menu; /*MIXIN.SCSS LIGNE*/
+    @include responsive-accueil; /*MIXINS.SCSS LIGNE 273*/
     /*MENU CARDS LAYOUT & DIMENSIONS*/
     article {
-        @include menu_cards; /*MIXINS.SCSS LIGNE 291*/
+        @include menu_cards; /*MIXINS.SCSS LIGNE 292*/
     }
     /*MENU CARDS COLOR linked with LINK*/
     a{
@@ -584,10 +587,11 @@ header {
 
 /*MENUS COOKING FOOD + PRICES LAYOUT*/
 
+
 #menu1 {
     @include menu-layout; /*MIXINS.SCSS LIGNE 122*/
     .note{
-        @include note-notation-responsive; /*MIXINS.SCSS LIGNE 325*/
+        @include note-notation-responsive; /*MIXINS.SCSS LIGNE 326*/
     }
     background-color:$background-color-menu1;
 }
@@ -630,7 +634,7 @@ header {
 /*UNDERLINED TITLES ANIMATION*/
 
 span{
-    @include underlined-titles; /*MIXINS.SCSS LIGNE 181*/
+    @include underlined-titles; /*MIXINS.SCSS LIGNE 182*/
 }
 
 /*BACK BUTTON*/
@@ -641,7 +645,7 @@ div{
     justify-content: center;
     align-items: center;
     a{
-        @include back-button; /*MIXINS.SCSS LIGNE 200*/
+        @include back-button; /*MIXINS.SCSS LIGNE 201*/
         height: 3vh;
         width: 20vw;
         border-radius: 10px;
@@ -652,7 +656,7 @@ div{
 
 /*TERMS OF USE PAGE*/
 #terms-of-use{
-    @include terms-of-use; /*MIXINS.SCSS LIGNE 218*/
+    @include terms-of-use; /*MIXINS.SCSS LIGNE 219*/
 }
 
 #terms-legal{
@@ -746,7 +750,7 @@ div{
 /*SOON BUTTON*/
 
 #soon{
-    @include soon-button-size; /*MIXINS.SCSS LIGNE 387*/
+    @include soon-button-size; /*MIXINS.SCSS LIGNE 388*/
     @include neumorphic-shadow; /*MIXINS.SCSS LIGNE 19*/
     background-color: $theme-color;
     border-radius:15px;
@@ -786,7 +790,8 @@ div{
 /*FOOTER LINKS LEGAL MENTION & CONTACT + LEGAL & CONTACT ANIMATION*/
 
 footer {
-    @include footer-size; /*MIXINS.SCSS LIGNE 437*/
+    @include max-width-footer; /*MIXINS.SCSS LIGNE 547*/
+    @include footer-size; /*MIXINS.SCSS LIGNE 438*/
     width: 100%;
     background-color: $theme-color;
     display: flex;
@@ -795,7 +800,7 @@ footer {
     position:fixed;
     bottom: 0;
     a{
-        @include footer-link-size; /*MIXINS.SCSS LIGNE 455*/
+        @include footer-link-size; /*MIXINS.SCSS LIGNE 456*/
         cursor:default;
         text-decoration: none;
         font-family: $secondary-font;
@@ -818,7 +823,7 @@ footer {
 /*UNDERLINED TITLES ANIMATION*/
 
 span{
-    @include underlined-titles; /*MIXINS.SCSS LIGNE 181*/
+    @include underlined-titles; /*MIXINS.SCSS LIGNE 182*/
 }
 
 /*BACK BUTTON*/
@@ -829,7 +834,7 @@ div{
     justify-content: center;
     align-items: center;
     a{
-        @include back-button; /*MIXINS.SCSS LIGNE 200*/
+        @include back-button; /*MIXINS.SCSS LIGNE 201*/
         height: 3vh;
         width: 20vw;
         border-radius: 10px;
@@ -840,7 +845,7 @@ div{
 
 /*TERMS OF USE PAGE*/
 #terms-of-use{
-    @include terms-of-use; /*MIXINS.SCSS LIGNE 218*/
+    @include terms-of-use; /*MIXINS.SCSS LIGNE 219*/
 }
 
 #terms-legal{

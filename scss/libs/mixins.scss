@@ -120,6 +120,7 @@
 
 /*MENUS LAYOUT*/
 @mixin menu-layout{
+    @include responsive-main-menus;
     @include neumorphic-shadow;
     @include table-layout;
     @include menu-layout-responsive-size;
@@ -314,8 +315,8 @@
         }
     }
     @media screen and (min-width: $breakpoint-xlarge){
-        min-height:55vw;
-        width: 35vw;
+        min-height:30vw;
+        width: 20vw;
         font-size: 1.6em;
     }
 }
@@ -350,19 +351,20 @@
         height: auto;
     }
     @media screen and (min-width: $breakpoint-tablet){
-height: auto;
+        height: auto;
         width:85vw;
         font-size:1.2em;
     }
     @media screen and (min-width: $breakpoint-large){
-min-height: 80vw;
+        min-height: 80vw;
         width:85vw;
         font-size:1.5em;
     }
     @media screen and (min-width: $breakpoint-xlarge){
-min-height:80vw;
-        width:85vw;
-        font-size:2em;
+        min-height:60vw;
+        width:50vw;
+        font-size:1.5em;
+        border: 1px rgba(0, 0, 0, 0.1) solid;
     }
 }
 
@@ -379,7 +381,7 @@ min-height:80vw;
         min-width:18vw;
     }
     @media screen and (min-width: $breakpoint-xlarge){
-        min-width:20vw;
+        min-width:16vw;
     }
 }
 
@@ -405,8 +407,8 @@ min-height:80vw;
         margin-top: 2vh;
     }
     @media screen and (min-width: $breakpoint-xlarge){
-        width: 25vw;
-        font-size:1.8em;
+        width: 16vw;
+        font-size:1.5em;
         margin-bottom:15vh;
         margin-top: 2vh;
     }
@@ -426,8 +428,9 @@ min-height:80vw;
         margin-bottom: 13vh;
     }
     @media screen and (min-width: $breakpoint-xlarge){
-        font-size:2em;
-        height:5vw;
+        font-size:1.6em;
+        height:2vw;
+        width: 10vw;
         margin-bottom: 13vh;
     }
 }
@@ -517,5 +520,58 @@ min-height:80vw;
         p{
             font-size: 1.2em;
         }
+    }
+}
+
+/*ACCUEIL MAX-WIDTH*/
+@mixin max-width-header{
+    @media screen and (min-width: $breakpoint-xlarge){
+        width:70%;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        text-align: center;
+        font-size: 0.6em;
+    }
+
+}
+
+@mixin max-width-menu{
+    @media screen and (min-width: $breakpoint-xlarge){
+        width:70%;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        background: $neuback;
+        font-size: 0.8em;
+    }
+}
+
+@mixin max-width-footer{
+    @media screen and (min-width: $breakpoint-xlarge){
+        width:70%;
+        display: flex;
+        font-size:0.8em;
+        justify-content:space-between;
+        left:   15%;
+        right: 15%;
+
+    }
+}
+
+@mixin responsive-background-color{
+    @media screen and (min-width: $breakpoint-xlarge){
+        background: white;
+    }
+}
+
+@mixin responsive-main-menus{
+    @media screen and (min-width: $breakpoint-xlarge){
+        max-width:70%;
+        display:flex;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
